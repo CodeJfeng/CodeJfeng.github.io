@@ -8,7 +8,7 @@ subtitle: ''
 description: ''
 keywords:
 author: John Doe
-language: zh-CN
+language: en
 timezone: ''
 
 # URL
@@ -102,6 +102,4 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/CodeJfeng/CodeJFeng.git
-  branch: master
+  type: ''
