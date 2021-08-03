@@ -468,7 +468,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><h2 id="第一章-面对对象的数据结构"><a href="#第一章-面对对象的数据结构" class="headerlink" title="第一章 面对对象的数据结构"></a>第一章 面对对象的数据结构</h2><p>​    数据结构是按照某种方式组织的数据集合。</p>
+                <h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><h2 id="第一章-面对对象的数据结构"><a href="#第一章-面对对象的数据结构" class="headerlink" title="第一章 面对对象的数据结构"></a>第一章 面对对象的数据结构</h2><h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>​    数据结构是按照某种方式组织的数据集合。</p>
 <p>​    数据结构不仅储存数据，而且支持处理该结构中数据的操作</p>
 <p>​    本章将介绍线性表、堆栈、队列和二叉树等四种经典的数据结构</p>
 <p>​    对象是靠new出来的。一个数据结构就是一个储存着其他对象的对象，储存在数据结构中的对象被称为数据或元素。</p>
@@ -570,12 +570,253 @@
 </tr>
 </tbody></table>
 <p>注：Collection接口中有些方法不能在子类中实现。在这种情况下，这种方法需要抛出异常java.lang.UnsupportedOperationException,该异常是RuntimeException异常的一个子类。项目中可以用到着一点，回想一下，圆柱类Cylinder继承圆类Circle的求周长方法findperimete，而方法findPerimeter在Cylinder类中毫无意义，因就可以在Cylinder类中声明如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">findPerimete</span> <span class="params">( )</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">​	<span class="keyword">throw</span> <span class="keyword">new</span> UnsupportOperationException (<span class="string">&quot;Method not supported&quot;</span>) ;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public double findPerimete ( ) &#123;</span><br><span class="line"></span><br><span class="line">	throw new UnsupportOperationException (&quot;Method not supported&quot;) ;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
 
 <h3 id="规则集Set"><a href="#规则集Set" class="headerlink" title="规则集Set"></a>规则集Set</h3><p>​        Set接口扩展Collection接口，它没有引入新的方法和常量，只是规定它的实例不能包含相同的元素。。实现Set接口的具体类必须保证不能向它添加重复的元素。也就是说，在一个规则集中，存在元素e1，e2，使得e1.equal(e2)的返回值为true。</p>
 <p>​        Set接口的三个具体类是HashSet、linkedHashSet和TreeSet。</p>
 <h4 id="散列集HashSet"><a href="#散列集HashSet" class="headerlink" title="散列集HashSet"></a>散列集HashSet</h4><p>​        HashSet类是实现接口的具体类。HashSet可以储存互不相同的任何元素。考虑到效率因素，添加到散列集的对象必须实现hashCode方法，适当地散列分布散列码。如Integer类中的haseCode方法返回的就是int值。Character类中的hashCode方法的返回值是字符的Unicode码。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">       Set set = new HashSet();//定义一个hashSet值</span><br><span class="line">       String text = &quot; Have a good day . Have a good class !&quot;;</span><br><span class="line">       text+=&quot;Have a good visit . Have fun&quot;;</span><br><span class="line">       StringTokenizer st = new StringTokenizer(text,&quot; .!?&quot;);//将String中的单词划分出来添加到hashSet</span><br><span class="line">       while (st.hasMoreTokens())&#123;</span><br><span class="line">           set.add(st.nextToken());</span><br><span class="line">       &#125;</span><br><span class="line">       System.out.println(set);</span><br><span class="line">       Iterator iterator = set.iterator();</span><br><span class="line">       while(iterator.hasNext())&#123;</span><br><span class="line">           System.out.print(iterator.next()+&quot; &quot;);</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">  //运行结果：</span><br><span class="line">  //[a, Have, visit, good, day, class, fun]</span><br><span class="line">  //a Have visit good day class fun </span><br></pre></td></tr></table></figure>
 
+<p>例子说明：StringTokebizer方法提取单词，并把他们添加到规则集中。如果一个单词如“good”，添加多次，则只有一个会被存储，因为规则集中不允许有重复的元素。</p>
+<p>​        集合中的但粗没有按插入时的储存顺序，因为散列集中的元素没有特殊顺序。要给他们排序需要使用LinkedHashSet类。</p>
+<h4 id="链式散列集LinkedhashSet"><a href="#链式散列集LinkedhashSet" class="headerlink" title="链式散列集LinkedhashSet"></a>链式散列集LinkedhashSet</h4><p>​        在HashSet中元素是没有顺序的，而在LinkedHashSet中，可以按元素插入集合的顺序进行提取，可以使用无参构造方法创建Linked Hash Set的对象。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">        Set set = new LinkedHashSet();</span><br><span class="line">        String text = &quot; Have a good day . Have a good class !&quot;;</span><br><span class="line">        text+=&quot;Have a good visit . Have fun&quot;;</span><br><span class="line">        StringTokenizer st = new StringTokenizer(text,&quot; .!?&quot;);</span><br><span class="line">        while (st.hasMoreTokens())&#123;</span><br><span class="line">            set.add(st.nextToken());</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(set);</span><br><span class="line">        Iterator iterator = set.iterator();</span><br><span class="line">        while(iterator.hasNext())&#123;</span><br><span class="line">            System.out.print(iterator.next()+&quot; &quot;);</span><br><span class="line">      &#125;</span><br><span class="line">&#125; </span><br><span class="line">//运行结果：</span><br><span class="line">//[Have, a, good, day, class, visit, fun]</span><br><span class="line">//Have a good day class visit fun </span><br></pre></td></tr></table></figure>
+
+<p>例子说明：LinkedHashSet是一个规则集，所以不允许存储重复的元素。</p>
+<p><strong>如果不需要使元素按其插入的顺序进行存储，因该使用HashSet。它的效率比LinkedHashSet要高。</strong></p>
+<h4 id="树形集TreeSet"><a href="#树形集TreeSet" class="headerlink" title="树形集TreeSet"></a>树形集TreeSet</h4><p>SortedSet是Set的一个子接口，它保证规则集中的元素是有序的。TreeSet是实现SortedSet接口的具体类。只有当对象之间可以互相比较的时候，才可以将他们添加到树形集TreeSet中。有两种方法可以实现对象的比较：</p>
+<ul>
+<li>使用Comparable接口。由于添加到规则集内的对象是Comparable的实例，所以他们可以使用compareTo方法来进行比较。这种方法的定义通常称为自然顺序（natural order）</li>
+<li>如果该类不支持Comparable接口。或者在实现Comparable接口的类中不想使用CompareTo方法进行比较，可以给规则集的元素指定一个比较器。这种方法被称为比较器顺序。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Set set = <span class="keyword">new</span> HashSet();</span><br><span class="line">        String text = <span class="string">&quot; Have a good day . Have a good class !&quot;</span>;</span><br><span class="line">        text+=<span class="string">&quot;Have a good visit . Have fun&quot;</span>;</span><br><span class="line">        StringTokenizer st = <span class="keyword">new</span> StringTokenizer(text,<span class="string">&quot; .!?&quot;</span>);</span><br><span class="line">        <span class="keyword">while</span> (st.hasMoreTokens())&#123;</span><br><span class="line">            set.add(st.nextToken());</span><br><span class="line">        &#125;</span><br><span class="line"><span class="comment">//        System.out.println(set);</span></span><br><span class="line">        TreeSet treeSet = <span class="keyword">new</span> TreeSet(set);</span><br><span class="line">        System.out.println(treeSet);</span><br><span class="line">        Iterator iterator = set.iterator();</span><br><span class="line">        <span class="keyword">while</span>(iterator.hasNext())&#123;</span><br><span class="line">            System.out.print(iterator.next()+<span class="string">&quot; &quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="comment">//运行结果</span></span><br><span class="line">   <span class="comment">//[Have, a, class, day, fun, good, visit]</span></span><br><span class="line"><span class="comment">//a Have visit good day class fun</span></span><br></pre></td></tr></table></figure>
+
+<p>​        使用TreeSet方法，每次添加字符串的时候，都会给字符串重新排序。使用例子中的方法一般效率你较高，因为它只对字符串进行一次排序。</p>
+<h3 id="比较器接口Comparator"><a href="#比较器接口Comparator" class="headerlink" title="比较器接口Comparator"></a>比较器接口Comparator</h3><p>​    当元素可能不是java.lang.Comparable的实例或者不能互相比较，可以定 义一个比较器来比较这些元素。要做到这点，创建一个java.util.Comparator接口的类、Comparator接口有两个方法compare和equals。</p>
+<ul>
+<li>public int compare（Object element1 , Object element2）</li>
+<li>public boolean equals(Object element)</li>
+</ul>
+<h3 id="线性表List"><a href="#线性表List" class="headerlink" title="线性表List"></a>线性表List</h3><p>​        线性表不仅支持重复元素的存储，而且支持用户指定他们的储存位置，用户可以使用下标访问元素。</p>
+<p>​        List接口拓展Collection接口，定义了一个支持元素重复的有序集合。List添加了面向位置的操作，并且添加了能够双向遍历线性表的新迭代探子。</p>
+<table>
+<thead>
+<tr>
+<th>java.util.List</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>add.(index: int ,  c :  Object )  :  boolean</td>
+<td>在指定下标位置添加一个新的元素</td>
+</tr>
+<tr>
+<td>addAll( index  : int   , c :  Collection) :   boolean</td>
+<td>在指定下标位置将集合C中的所有元素添加到该线性表</td>
+</tr>
+<tr>
+<td>get(  index :  int ) : Object</td>
+<td>返回该线性表中指定下标处的元素</td>
+</tr>
+<tr>
+<td>indexOf( element : Object ) : int</td>
+<td>返回与指定元素匹配的第一个元素下标</td>
+</tr>
+<tr>
+<td>lastIndexOf(element :  Object ) : int</td>
+<td>返回与指定元素匹配的最后一个元素的下标</td>
+</tr>
+<tr>
+<td>remove( index :  int) : int</td>
+<td>删除指定下标的元素</td>
+</tr>
+<tr>
+<td>set( index  :  int , element :  Object ) : Object</td>
+<td>设置指定下标的元素</td>
+</tr>
+<tr>
+<td>subList(fromIndex : int ,  toIndex  : int )  : List</td>
+<td>返回下标从fromIndex 到 toIndex的元素构成的子线性表</td>
+</tr>
+<tr>
+<td>listIndexOf():ListIterator</td>
+<td>返回该线性表所有元素的迭代探子</td>
+</tr>
+</tbody></table>
+<p>​     AbstractList类提供了List接口中部分方法的实现。AbstractSequentialList类扩展AbstractList类。支持链表。</p>
+<h4 id="数组线性表ArrayList和链表LinkedList"><a href="#数组线性表ArrayList和链表LinkedList" class="headerlink" title="数组线性表ArrayList和链表LinkedList"></a>数组线性表ArrayList和链表LinkedList</h4><p>​        ArrayList类和LinkedList类是实现接口的两个具体类。不同情况下选择不同的数据结构。线性表的大小是可以动态伸缩的，数组的大小在创造时就已经确定了，如不要求在线性表中插入和删除元素，数组是效率最高的数据结构。</p>
+<h4 id="向量类Vector"><a href="#向量类Vector" class="headerlink" title="向量类Vector"></a>向量类Vector</h4><p>​        Vector类除了包含用于访问和修改向量的同步方法外，它与ArrayList是相同的。同步方法用于防止两个或多个线程同时访问向量时引起的数据冲突。到现在为止，我们所学的所有新的集合数据结构都不是同步的。如果要求同步，可以使用集合类的同步版本。</p>
+<table>
+<thead>
+<tr>
+<th>java.util.Vector</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Vector()</td>
+<td>创建一个初始容量为10的空向量</td>
+</tr>
+<tr>
+<td>Vector( initialCapacity  :  int )</td>
+<td>用指定的初始容量创建一个向量</td>
+</tr>
+<tr>
+<td>Vector( initialCapacity : int ,  CapacityIncr  :  int )</td>
+<td>指定的初始容量和容量逐步增长创建一个向量</td>
+</tr>
+<tr>
+<td>addElement（ o  :  Object）:  void</td>
+<td>将元素追加到向量尾</td>
+</tr>
+<tr>
+<td>capacity( )  :   int</td>
+<td>返回该向量的当前容量</td>
+</tr>
+<tr>
+<td>copyInto( anArray  : Object[ ] ) : void</td>
+<td>该向量中的元素复制到数组中</td>
+</tr>
+<tr>
+<td>elemrntAt( index  :  int ) : Object</td>
+<td>返回指定下标的元素值</td>
+</tr>
+<tr>
+<td>element(  ) : Enumeration</td>
+<td>返回该向量的枚举值</td>
+</tr>
+<tr>
+<td>ensureCapacity()  :  void</td>
+<td>增加向量的容量</td>
+</tr>
+<tr>
+<td>insertElementAt( o  : Object ,index : int ) : void</td>
+<td>在指定下标处插入元素o</td>
+</tr>
+<tr>
+<td>removeElement ( o : Object )  :  void</td>
+<td>删除该向量中第一个与元素o匹配的元素</td>
+</tr>
+<tr>
+<td>setElement（ o : Object , index ,int ) : void</td>
+<td>设置该向量中指定下标位置的新元素</td>
+</tr>
+<tr>
+<td>setSize( newSize : int ) : void</td>
+<td>设置该向量的大小</td>
+</tr>
+<tr>
+<td>trimToSize( ) : void</td>
+<td>把该向量的容量缩减到该向量的大小</td>
+</tr>
+</tbody></table>
+<p><strong>例子： Vector类的使用</strong></p>
+<p><strong>问题</strong>      通过检验2，3，4，5···· 、250 是否为因子来判断n是否为质数。一种为直接找因子，另一种判断n是否为素数的有效方法是，检验小于或者等于1/2^n 的素数中是否有能够整除n的，如果没有，则为素数。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        //定义一行</span><br><span class="line">        final int Number_Pre_Line = 10;</span><br><span class="line">        int count = 0;</span><br><span class="line">        //创建一个Vector向量去储存结果</span><br><span class="line">        java.util.Vector vector = new java.util.Vector();	</span><br><span class="line">        System.out.println(&quot;输出前250以前的所有质数&quot;);</span><br><span class="line">        for (int n = 2 ; n &lt; 250 ; n++) &#123;</span><br><span class="line">            boolean isPrime = true;</span><br><span class="line">            for (int i = 0; i &lt; vector.size(); i++) &#123;</span><br><span class="line">                int primeNumber = ((Integer) vector.elementAt(i)).intValue();</span><br><span class="line">                if (primeNumber &gt; Math.sqrt(n)) break;</span><br><span class="line">                if (n % primeNumber == 0) &#123;</span><br><span class="line">                    isPrime = false;</span><br><span class="line">                    break;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            if (isPrime) &#123;</span><br><span class="line">                count++;</span><br><span class="line">                vector.addElement(new Integer(n));</span><br><span class="line">                if (count % Number_Pre_Line == 0) &#123;</span><br><span class="line">                    System.out.println(n);</span><br><span class="line">                &#125; else</span><br><span class="line">                    System.out.print(n + &quot; &quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="栈类Stack"><a href="#栈类Stack" class="headerlink" title="栈类Stack"></a>栈类Stack</h4><p>​        在Java的集合构架，栈类Stack是作为Vector类的扩展实现的。Stack类扩展Vector类提供的后进先出的数据结构。</p>
+<table>
+<thead>
+<tr>
+<th>java.util.Stack</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>empty( ) : boolean</td>
+<td align="left">该栈为空时返回true</td>
+</tr>
+<tr>
+<td>peek( ) : Object</td>
+<td align="left">返回该栈栈顶元素</td>
+</tr>
+<tr>
+<td>pop( ) : Object</td>
+<td align="left">返回并删除该栈栈顶元素</td>
+</tr>
+<tr>
+<td>push( o  :  Object) : Object</td>
+<td align="left">在该栈的栈顶添加一个新的元素</td>
+</tr>
+<tr>
+<td>search( o  :  Object) : int</td>
+<td align="left">返回指定元素在该栈中的位置</td>
+</tr>
+</tbody></table>
+<h4 id="图Map"><a href="#图Map" class="headerlink" title="图Map"></a>图Map</h4><p>​        collection接口表示储存在一个规则集或一个线性表中元素的集合。Map接口建立元素和键值的一个映射关系。一个图中不能有重复的键值，每个键值对应一个值。Map接口提供对一个值的集合与一个键值的规则集进行查询、更新、和读取等方法。</p>
+<table>
+<thead>
+<tr>
+<th>Java.util.Map</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>clear( )  : void</td>
+<td>从该图中删除所有的元素</td>
+</tr>
+<tr>
+<td>containsKey（key  : Object ）： boolean</td>
+<td>如果该图中包含具有指定键值的一个映像，返回true</td>
+</tr>
+<tr>
+<td>containsValue( value : Object) :  boolean</td>
+<td>如果该图将一个或多个键值映射为指定值，返回true</td>
+</tr>
+<tr>
+<td>entrySet( ) :  Set</td>
+<td>返回该图中实体构成的规则集</td>
+</tr>
+<tr>
+<td>get( Key :  Object) : Object</td>
+<td>返回该图中指定键值对应的值</td>
+</tr>
+<tr>
+<td>isEmpty( ) : boolean</td>
+<td>如果该图没有映像，返回true</td>
+</tr>
+<tr>
+<td>keySet( ) : Set</td>
+<td>返回该图中键值构成的规则集</td>
+</tr>
+<tr>
+<td>put( key : Object , Value ： Object) : Object</td>
+<td>给该图添加一个映像</td>
+</tr>
+<tr>
+<td>remove ( key : Object) : Object</td>
+<td>删除指定键值的映像</td>
+</tr>
+<tr>
+<td>size( ) : int</td>
+<td>返回图中映像的个数</td>
+</tr>
+<tr>
+<td>values() : collection</td>
+<td>返回由该图中的值构成的集合</td>
+</tr>
+</tbody></table>
+<h4 id="Collections类"><a href="#Collections类" class="headerlink" title="Collections类"></a>Collections类</h4><p>Colleections类包含了管理集合与图、创建同步集合类、创建只读集合类等静态方法。</p>
+<p><strong>Collecttions类的使用</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Collections;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        List list = Collections.nCopies(<span class="number">3</span> , <span class="string">&quot;red&quot;</span>);</span><br><span class="line"></span><br><span class="line">        ArrayList arrayList = <span class="keyword">new</span> ArrayList(list);</span><br><span class="line">        System.out.println(<span class="string">&quot;The initial list is &quot;</span>+arrayList);</span><br><span class="line">        list = <span class="keyword">null</span>;<span class="comment">//释放list</span></span><br><span class="line"></span><br><span class="line">        Collections.fill(arrayList , <span class="string">&quot;yellow&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;After filling yelow ,the list is &quot;</span>+ arrayList);</span><br><span class="line"></span><br><span class="line">        arrayList.add(<span class="string">&quot;while&quot;</span>);</span><br><span class="line">        arrayList.add(<span class="string">&quot;black&quot;</span>);</span><br><span class="line">        arrayList.add(<span class="string">&quot;orange&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;After add new element , the list is \n&quot;</span>+ arrayList);</span><br><span class="line"></span><br><span class="line">        Collections.shuffle(arrayList);</span><br><span class="line">        System.out.println(<span class="string">&quot;After shuffling , thr list \n&quot;</span> + arrayList);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;The minimum elements in the list \n&quot;</span>+Collections.min( arrayList));</span><br><span class="line">        System.out.println(<span class="string">&quot;The maximum elements in the list \n&quot;</span>+Collections.max( arrayList));</span><br><span class="line"></span><br><span class="line">        Collections.sort(arrayList);</span><br><span class="line">        System.out.println(<span class="string">&quot;The sorted list is \n&quot;</span>+ arrayList);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;The sreach result for gray is &quot;</span>+ Collections.binarySearch(arrayList, <span class="string">&quot;gray&quot;</span>));</span><br><span class="line"></span><br><span class="line">        <span class="comment">//创建一个多并发的列表</span></span><br><span class="line">        List syncList = Collections.synchronizedList(arrayList);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//创建一个只读的静态列表</span></span><br><span class="line">        List unmodifiableList = Collections.unmodifiableList(syncList);</span><br><span class="line">        arrayList= <span class="keyword">null</span> ; <span class="comment">///释放空间</span></span><br><span class="line">        syncList = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            unmodifiableList.add(<span class="string">&quot;black&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">catch</span> (Exception ex) &#123;</span><br><span class="line">                System.out.println(ex);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">运行结果：</span><br><span class="line">The initial list is [red, red, red]</span><br><span class="line">After filling yelow ,the list is [yellow, yellow, yellow]</span><br><span class="line">After add <span class="keyword">new</span> element , the list is </span><br><span class="line">[yellow, yellow, yellow, <span class="keyword">while</span>, black, orange]</span><br><span class="line">After shuffling , thr list </span><br><span class="line">[<span class="keyword">while</span>, orange, yellow, black, yellow, yellow]</span><br><span class="line">The minimum elements in the list </span><br><span class="line">black</span><br><span class="line">The maximum elements in the list </span><br><span class="line">yellow</span><br><span class="line">The sorted list is </span><br><span class="line">[black, orange, <span class="keyword">while</span>, yellow, yellow, yellow]</span><br><span class="line">The sreach result <span class="keyword">for</span> gray is -<span class="number">2</span></span><br><span class="line">java.lang.UnsupportedOperationException</span><br><span class="line">The initial list is [red, red, red]</span><br><span class="line">After filling yelow ,the list is [yellow, yellow, yellow]</span><br><span class="line">After add <span class="keyword">new</span> element , the list is </span><br><span class="line">[yellow, yellow, yellow, <span class="keyword">while</span>, black, orange]</span><br><span class="line">After shuffling , thr list </span><br><span class="line">[<span class="keyword">while</span>, orange, yellow, black, yellow, yellow]</span><br><span class="line">The minimum elements in the list </span><br><span class="line">black</span><br><span class="line">The maximum elements in the list </span><br><span class="line">yellow</span><br><span class="line">The sorted list is </span><br><span class="line">[black, orange, <span class="keyword">while</span>, yellow, yellow, yellow]</span><br><span class="line">The sreach result <span class="keyword">for</span> gray is -<span class="number">2</span></span><br><span class="line">java.lang.UnsupportedOperationException</span><br></pre></td></tr></table></figure>
+
+<h4 id="Arrays类"><a href="#Arrays类" class="headerlink" title="Arrays类"></a>Arrays类</h4><p>​        Array包含对数组进行排序、查找、比较和填充元素的各种静态方法。它还包含了将数组转化为线性表的方法。</p>
+<h4 id="主要术语"><a href="#主要术语" class="headerlink" title="主要术语"></a>主要术语</h4><p>collection （集合）                             map（图）</p>
+<p>list（线性表）                                     set（规则集）</p>
+<h4 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h4><ul>
+<li>java集合构架支持三种集合：规则集、线性表和图。它们分别在Set、List和Map中定义。规则集set储存一组互不相同的元素。线性表list储存元素的有序集合。图map中储存一组对象，每个对象的键值不同</li>
+<li>有三种类型的规则集：散列集HashSet、链式散列集LinkedHashSet和树形集TreeSet。</li>
+<li>有两种类型的线性表：数组线性表ArrayList和链表LinkedList。</li>
+<li>Vector类实现了List接口。在java 2中，Vector类与ArrayList基本一致，所不同的是它包含了访问和修改向量的同步方法。Stack类扩展了Vector类，并提供了集中管理栈的方法。</li>
+<li>Collection接口表示储存在规则集或线性表中元素的集合。Map接口将键值映射为元素，键值类似于下标。在List中，下标为整数；在map中下标可以为任意一个值。</li>
+<li>有三种类型的图： HashMap、LinkedHashMap和TreeMap。对于查询值、插入映射和删除映射HashMap是最高效的。LinkedHashMap支持对图中元素的排序。在HashMap中是没有顺序的，但在LinkedHashMap中的元素可以按序访问。TreeSet对于按顺序遍历键值是高效率的，其中键值可以使用Comparable接口或Comparator接口排序。</li>
+<li>Collections类提供对集合和图进行操作的静态方法，还提供了创建同步化集合。只读集合的静态方法。</li>
+<li>Arrays类包含对数组的排序、查找、比较以及填充元素的静态方法。</li>
+</ul>
+<h2 id="第三章-多线程和国际化"><a href="#第三章-多线程和国际化" class="headerlink" title="第三章 多线程和国际化"></a>第三章 多线程和国际化</h2><h3 id="引言-2"><a href="#引言-2" class="headerlink" title="引言"></a>引言</h3><p>​        Java的重要功能之一就是天然的支持多线程。多线程是指在一个程序中允许同时运行多个任务的能力。在许多程序设计语言中，多线程都是通过调用依赖于系统的过程中或函数来实现的。本章将介绍线程的概念以及如何在Java中开发多线线程程序。</p>
+<h3 id="线程的概念"><a href="#线程的概念" class="headerlink" title="线程的概念"></a>线程的概念</h3>
                 
             </div>
             <hr/>
