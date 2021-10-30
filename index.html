@@ -1,471 +1,425 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+<!DOCTYPE HTML>
+<html lang="zh-CN">
 
-  
-  <title>京少</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="努力会说话，但从不会白费。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="京少">
-<meta property="og:url" content="https://codejfeng.github.com/index.html">
-<meta property="og:site_name" content="京少">
-<meta property="og:description" content="努力会说话，但从不会白费。">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="CodeJfeng">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="京少" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="京少">
+    <meta name="description" content="努力会说话，但从不会白费。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>京少</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.0"></head>
 
+
+
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">京少</a>
-      </h1>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">京少</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
       
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">京少</div>
+        <div class="logo-desc">
+            
+            努力会说话，但从不会白费。
+            
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
         
-          <a class="main-nav-link" href="/">Home</a>
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
         
-      </nav>
-      <nav id="sub-nav">
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
         
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://CodeJfeng.github.com"></form>
-      </div>
-    </div>
-  </div>
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
 </header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-Web前端" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/09/02/Web%E5%89%8D%E7%AB%AF/" class="article-date">
-  <time datetime="2021-09-02T04:00:00.000Z" itemprop="datePublished">2021-09-02</time>
-</a>
+
     
-  </div>
-  <div class="article-inner">
+<style>
+    .carousel-control {
+        width: 45px;
+        height: 45px;
+        line-height: 55px;
+        border-radius: 45px;
+        background: transparent;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    #prev-cover {
+        position: absolute;
+        top: 48%;
+        left: 8px;
+    }
+
+    #next-cover {
+        position: absolute;
+        top: 48%;
+        right: 8px;;
+    }
+
+    #prev-cover i {
+        margin-right: 3px;
+    }
+
+    #next-cover i {
+        margin-left: 3px;
+    }
+
+    .carousel-control:hover {
+        background-color: rgba(0, 0, 0, .4);
+    }
+
+    .carousel-control i {
+        color: #fff;
+        font-size: 2.4rem;
+    }
+</style>
+
+
+
+<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
     
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/09/02/Web%E5%89%8D%E7%AB%AF/">web前端</a>
-    </h1>
-  
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="HTML-amp-CSS-概述"><a href="#HTML-amp-CSS-概述" class="headerlink" title="HTML &amp; CSS 概述"></a>HTML &amp; CSS 概述</h2><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h3 id="第一个网页"><a href="#第一个网页" class="headerlink" title="第一个网页"></a>第一个网页</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;X-UA-Compatible&quot;</span> <span class="attr">content</span>=<span class="string">&quot;IE=edge&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>这是第一个网站<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>this is my first web<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+    <div class="carousel-item red white-text bg-cover about-cover">
+        <div class="container">
+            <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                大数据
+                
+            </div>
 
-<h3 id="语义化"><a href="#语义化" class="headerlink" title="语义化"></a>语义化</h3><p>1、每一个HTML元素都有具体的含义</p>
-<p>a元素：超链接</p>
-<p>p元素：段落</p>
-<p>h1元素： 一级标题</p>
-<p>2、所有元素与展示效果无关</p>
-<p>元素在页面的展示效果，应该由CSS决定。</p>
-<p>因为浏览器中带有默认的CSS样式。</p>
-<p><strong>选择什么元素，取决于内容的含义，而不是显示处的效果。</strong></p>
-<h3 id="文本元素"><a href="#文本元素" class="headerlink" title="文本元素"></a>文本元素</h3><p>HTML5中支持的元素</p>
-<p>[HTML元素周期表](<a target="_blank" rel="noopener" href="https://www.xuanfengge.com/funny/html5/element/">HTML5元素周期表 (xuanfengge.com)</a>) </p>
-<ul>
-<li><p>h1<del>h6 一级</del>六级标题</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(h$&gt;&#123;$集标题&#125;)*6</span><br></pre></td></tr></table></figure></li>
-<li><p>p元素 表示一个段落</p>
-</li>
-<li><p>span[无语义]</p>
-</li>
-</ul>
-<p>没有语义，仅用于设置样式</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    三原色：<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;color: red;&quot;</span>&gt;</span>红<span class="tag">&lt;/<span class="name">span</span>&gt;</span>，<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;color: yellow;&quot;</span>&gt;</span>黄<span class="tag">&lt;/<span class="name">span</span>&gt;</span>，<span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;color: green;&quot;</span>&gt;</span>绿<span class="tag">&lt;/<span class="name">span</span>&gt;</span>.</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>pre 预格式化文本元素</li>
-</ul>
-<p>空白折叠：在源代码中的连续空白字符，在页面显示时，会被折叠成一个空格。在pre元素中的内容不会出现空白折叠。</p>
-<p>pre元素的本质：它有一个默认的CSS属性。</p>
-<p><strong>显示代码时，通常外面套code元素，code表示代码区域</strong></p>
-<ul>
-<li>实体字符 </li>
-</ul>
-<p>1、 &lt;  用 “&amp;lt”+”;”表示</p>
-<p>2、 &gt; 用”&amp;gt”+”:”表示</p>
-<p>3、版权符 &copy; </p>
-<table>
-<thead>
-<tr>
-<th align="left">Character</th>
-<th align="left">Entity</th>
-<th align="left">Note</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">&amp;</td>
-<td align="left"><code>&amp;</code></td>
-<td align="left">Interpreted as the beginning of an entity or character reference.</td>
-</tr>
-<tr>
-<td align="left">&lt;</td>
-<td align="left"><code>&lt;</code></td>
-<td align="left">Interpreted as the beginning of a <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Glossary/Tag">tag</a></td>
-</tr>
-<tr>
-<td align="left">&gt;</td>
-<td align="left"><code>&gt;</code></td>
-<td align="left">Interpreted as the ending of a <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Glossary/Tag">tag</a></td>
-</tr>
-<tr>
-<td align="left">“</td>
-<td align="left"><code>&quot;</code></td>
-<td align="left">Interpreted as the beginning and end of an <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Glossary/Attribute">attribute</a>‘s value.</td>
-</tr>
-</tbody></table>
-<h3 id="a元素"><a href="#a元素" class="headerlink" title="a元素"></a>a元素</h3><h4 id="href属性"><a href="#href属性" class="headerlink" title="href属性"></a>href属性</h4><p>hyper reference ：通常表示跳转地址</p>
-<ol>
-<li><p>跳转地址</p>
-</li>
-<li><p>跳转到某个锚点  添加一个属性 id=””;在href添加#；id ：属于全局属性。</p>
-</li>
-<li><p>功能连接 </p>
-<p>点击后触发某个功能</p>
-<ul>
-<li>执行JS代码 ：<code>    &lt;a href=&quot;javascript:alert(&#39;你好！&#39;)&quot;&gt;弹出：你好！&lt;/a&gt;</code></li>
-<li>发送邮件：<code>&lt;a href=&quot;mailto:1683770168@qq.com&quot;&gt;点击给我发邮件&lt;/a&gt; </code></li>
-</ul>
-</li>
-</ol>
-<h4 id="target属性"><a href="#target属性" class="headerlink" title="target属性"></a>target属性</h4><p>表示跳转的位置</p>
-<p>target的取值：</p>
-<ul>
-<li><p>_self：表示在当前页面进行打开</p>
-</li>
-<li><p>_blank : 表示在空白窗口打开</p>
-</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>= <span class="string">&quot;https://www.baidu.com&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> &gt;</span></span><br><span class="line">    百度</span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="路径的写法"><a href="#路径的写法" class="headerlink" title="路径的写法"></a>路径的写法</h3><p>站内资源：相对路径</p>
-<p>站外资源：绝对路径</p>
-<h3 id="图片元素"><a href="#图片元素" class="headerlink" title="图片元素"></a>图片元素</h3><h4 id="img"><a href="#img" class="headerlink" title="img"></a>img</h4><p>image缩写，空元素</p>
-<p><code>&lt;img src=&quot;&quot; alt=&quot;&quot;&gt; </code></p>
-<p><strong>src属性</strong> ： source</p>
-<p><strong>alt属性</strong> ：当图片资源失效时，将图片转变为该属性的文字</p>
-<p>可以与<strong>a元素</strong>进行连用跳转。</p>
-<p>可以用<strong>map元素</strong>连用，特殊跳转。</p>
-<p>可以与<strong>figure元素</strong>连用，语义化加深</p>
-<h3 id="多媒体元素"><a href="#多媒体元素" class="headerlink" title="多媒体元素"></a>多媒体元素</h3><p>video 视频播放标签</p>
-<p>aduio 音频播放标签</p>
-<h4 id="video"><a href="#video" class="headerlink" title="video"></a>video</h4><p>mp4格式、webm格式</p>
-<p>controls ： boolean属性 控制控件的显示，取值只能controls</p>
-<p>autplay ： boolean属性 自动播放视频</p>
-<p>muted ： boolean属性 表示静音播放</p>
-<p>loop ：boolean属性 表示循环播放</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">video</span> <span class="attr">autoplay</span> <span class="attr">muted</span> <span class="attr">controls</span>=<span class="string">&quot;controls&quot;</span> <span class="attr">src</span>=<span class="string">&quot;./TheAngryBirdsMovie-_mark.mp4&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width:1400px;&quot;</span>&gt;</span></span><br><span class="line">        小鸟</span><br><span class="line">    <span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="audio"><a href="#audio" class="headerlink" title="audio"></a>audio</h4><p>MP3格式</p>
-<p>controls ： boolean属性 控制控件的显示，取值只能controls</p>
-<p>autplay ： boolean属性 自动播放音频</p>
-<p>muted ： boolean属性 表示静音播放</p>
-<p>loop ：boolean属性 表示循环播放</p>
-<h3 id="列表元素"><a href="#列表元素" class="headerlink" title="列表元素"></a>列表元素</h3><h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><p>ol： ordered list  <strong>父元素</strong></p>
-<p>li：list item  <strong>子元素</strong></p>
-<p><strong>type标签</strong></p>
-<p>注：在 HTML 4.01 中，不赞成使用 ol 元素的 type 属性；在 XHTML 1.0 Strict DTD 中，不支持 ol 元素的 type 属性。</p>
-<p>请使用 CSS 代替。CSS 语法：<ol style="list-style-type:upper-roman"></p>
-<h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><p>只需要把<strong>ol</strong>改成<strong>ul</strong></p>
-<h4 id="定义列表"><a href="#定义列表" class="headerlink" title="定义列表"></a>定义列表</h4><p>自定义列表不仅仅是一列项目，而是项目及其注释的组合。</p>
-<p>自定义列表以 <dl> 标签开始。</p>
-<p>每个自定义列表项以 <dt> 开始。</p>
-<p>每个自定义列表项的定义以 <dd> 开始。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dt</span>&gt;</span>Coffee<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dd</span>&gt;</span>Black hot drink<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dt</span>&gt;</span>Milk<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dd</span>&gt;</span>White cold drink<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-      
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: [ 
+                            
+                                "从来没有真正的绝境, 只有心灵的迷途",
+                            
+                                "Never really desperate, only the lost of the soul",
+                            
+                        ],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
+                
+            </div>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://codejfeng.github.com/2021/09/02/Web%E5%89%8D%E7%AB%AF/" data-id="ckv5xrja70000pww7fbb342nd" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML-CSS/" rel="tag">HTML+CSS</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
+</div>
 
 
-  
-    <article id="post-分布式计算" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/08/31/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/" class="article-date">
-  <time datetime="2021-08-31T12:00:00.000Z" itemprop="datePublished">2021-08-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/31/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/">分布式计算</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="第一章-分布式计算"><a href="#第一章-分布式计算" class="headerlink" title="第一章 分布式计算"></a>第一章 分布式计算</h2><h3 id="1-1-分布式计算简介"><a href="#1-1-分布式计算简介" class="headerlink" title="1.1 分布式计算简介"></a>1.1 分布式计算简介</h3><p>​        分布式计算是应用分解成许多小的部分，分配给多台计算机进行处理。目的节约整体计算时间，大大提高计算效率。</p>
-<p><strong>分布式储存是解决大规模数据高效储存的问题</strong></p>
-<p><strong>分布式计算是解决大规模数据高效处理的问题</strong></p>
-<p>其中，共享稀有资源和平衡负载是计算机分布式计算的核心思想之一</p>
-<h3 id="1-2-大数据的概念"><a href="#1-2-大数据的概念" class="headerlink" title="1.2 大数据的概念"></a>1.2 大数据的概念</h3><p>​        指<strong>无法</strong>在<strong>一定时间范围内</strong>用<strong>常规软件</strong>工具无法捕捉、管理和处理的<strong>数据集合</strong>。大数据”是需要新处理模式才能具有更强的决策力、洞察发现力和流程优化能力</p>
-<h3 id="1-3-大数据的特点"><a href="#1-3-大数据的特点" class="headerlink" title="1.3 大数据的特点"></a>1.3 大数据的特点</h3><p>​        <strong>大数据有5大特征。简称 5v特征</strong></p>
-<ul>
-<li>容量（Volume）</li>
-<li>种类（Variety）</li>
-<li>速度（Velocity）</li>
-<li>真实性（Veracity）</li>
-<li>价值（Value）</li>
-</ul>
-<h3 id="1-4-大数据技术框架"><a href="#1-4-大数据技术框架" class="headerlink" title="1.4 大数据技术框架"></a>1.4 大数据技术框架</h3><p>大数据技术框架</p>
-<ol>
-<li>简介<br>大数据技术体系主要涉及方面：数据采集，数据处理，数据存储以及分布式协调服务；<br>数据采集：etl，kettle，flume<br>数据处理：离线处理hadoop，实时处理spark、storm、flink<br>数据存储：HBASE、hdfs。<br>数据仓库；hive<br>分布式协调服务：zookeeper</li>
-</ol>
-<p>2.概述<br><strong>ETL</strong>:<br>ETL是将业务系统的数据经过抽取、清洗转换之后加载到数据仓库的过程，目的是将企业中的分散、零乱、标准不统一的数据整合到一起，为企业的决策提供分析依据， ETL是BI（商业智能）项目重要的一个环节。</p>
-<p><strong>Kettle</strong>:<br>Kettle 是一款国外开源的 ETL 工具，纯 Java 编写，绿色无需安装，数据抽取高效稳定(数据迁移工具)。Kettle 中有两种脚本文件，transformation 和 job，transformation 完成针对数据的基础转换，job 则完成整个工作流的控制。</p>
-<p>Kettle 中文名称叫水壶，该项目的主程序员MATT 希望把各种数据放到一个壶里，然后以一种指定的格式流出。</p>
-<p>Kettle这个ETL工具集，它允许你管理来自不同数据库的数据，通过提供一个图形化的用户环境来描述你想做什么，而不是你想怎么做。</p>
-<p>Kettle家族目前包括4个产品：Spoon、Pan、CHEF、Kitchen。 </p>
-<p>SPOON 允许你通过图形界面来设计ETL转换过程（Transformation）。 </p>
-<p>PAN 允许你批量运行由Spoon设计的ETL转换 (例如使用一个时间调度器)。Pan是一个后台执行的程序，没有图形界面。 </p>
-<p>CHEF 允许你创建任务（Job）。 任务通过允许每个转换，任务，脚本等等，更有利于自动化更新数据仓库的复杂工作。任务通过允许每个转换，任务，脚本等等。任务将会被检查，看看是否正确地运行了。 </p>
-<p>KITCHEN 允许你批量使用由Chef设计的任务 (例如使用一个时间调度器)。KITCHEN也是一个后台运行的程序。</p>
-<p><strong>Flume</strong>:<br>Flume可以将应用产生的数据存储到任何集中存储器中，比如HDFS,HBase.<br>当收集数据的速度超过将写入数据的时候，也就是当收集信息遇到峰值时，这时候收集的信息非常大，甚至超过了系统的写入数据能力，这时候，Flume会在数据生产者和数据收容器间做出调整，保证其能够在两者之间提供平稳的数据.</p>
-<p>提供上下文路由特征<br>Flume的管道是基于事务，保证了数据在传送和接收时的一致性.<br>Flume是可靠的，容错性高的，可升级的，易管理的,并且可定制的。</p>
-<p><strong>Hadoop</strong>:<br>Hadoop是一个能够让用户轻松架构和使用的分布式计算平台。用户可以轻松地在Hadoop上开发和运行处理海量数据的应用程序。它主要有以下几个优点 ：<br>高可靠性：Hadoop按位存储和处理数据的能力值得人们信赖。<br>高扩展性：Hadoop是在可用的计算机集簇间分配数据并完成计算任务的，这些集簇可以方便地扩展到数以千计的节点中。<br>高效性：Hadoop能够在节点之间动态地移动数据，并保证各个节点的动态平衡，因此处理速度非常快。<br>高容错性：Hadoop能够自动保存数据的多个副本，并且能够自动将失败的任务重新分配。<br>低成本：与一体机、商用数据仓库以及QlikView、Yonghong Z-Suite等数据集市相比，hadoop是开源的，项目的软件成本因此会大大降低。<br>        Hadoop带有用Java语言编写的框架，因此运行在 Linux 生产平台上是非常理想的。Hadoop 上的应用程序也可以使用其他语言编写，比如 C++。</p>
-<p><strong>Spark</strong>:<br>Spark 主要有三个特点：<br>首先，高级 API 剥离了对集群本身的关注，Spark 应用开发者可以专注于应用所要做的计算本身。<br>其次，Spark 很快，支持交互式计算和复杂算法。<br>最后，Spark 是一个通用引擎，可用它来完成各种各样的运算，包括 SQL 查询、文本处理、机器学习等，而在 Spark 出现之前，我们一般需要学习各种各样的引擎来分别处理这些需求。</p>
-<p>内存计算下，Spark 比 Hadoop 快100倍。<br>Spark 提供了大量的库，包括Spark Core、Spark SQL、Spark Streaming、MLlib、GraphX。 开发者可以在同一个应用程序中无缝组合使用这些库。<br>Spark 支持 Hadoop YARN，Apache Mesos，及其自带的独立集群管理器</p>
-<p><strong>storm</strong>:<br>storm可以实时处理消息和更新DB，对一个数据量进行持续的查询并返回客户端（持续计算），对一个耗资源的查询作实时并行化的处理(分布式方法调用，即DRPC），storm的这些基础API可以满足大量的场景。<br>可伸缩性高:  Storm的可伸缩性可以让storm每秒可以处理的消息量达到很高。扩展一个实时计算任务，你所需要做的就是加机器并且提高这个计算任务的并行度 。Storm使用ZooKeeper来协调集群内的各种配置使得Storm的集群可以很容易的扩展。<br>保证无数据丢失： 实时系统必须保证所有的数据被成功的处理。 那些会丢失数据的系统的适用场景非常窄， 而storm保证每一条消息都会被处理， 这一点和S4相比有巨大的反差。<br>异常健壮： storm集群非常容易管理，轮流重启节点不影响应用。<br>容错性好：在消息处理过程中出现异常， storm会进行重试<br>语言无关性： Storm的topology和消息处理组件(Bolt)可以用任何语言来定义， 这一点使得任何人都可以使用storm.</p>
-<p>推荐系统（实时推荐，根据下单或加入购物车推荐相关商品）、金融系统、预警系统、网站统计（实时销量、流量统计，如淘宝双11效果图）、交通路况实时系统等等。</p>
-<p><strong>Flink</strong>:<br>Flink是由Apache软件基金会开发的开源流处理框架，其核心是用Java和Scala编写的分布式流数据流引擎。Flink以数据并行和流水线方式执行任意流数据程序，Flink的流水线运行时系统可以执行批处理和流处理程序。此外，Flink的运行时本身也支持迭代算法的执行。</p>
-<p><strong>HBase</strong>:<br>HBase是一个分布式的、面向列的开源数据库，该技术来源于 Fay Chang 所撰写的Google论文“Bigtable：一个结构化数据的分布式存储系统”。就像Bigtable利用了Google文件系统（File System）所提供的分布式数据存储一样，HBase在Hadoop之上提供了类似于Bigtable的能力。HBase是Apache的Hadoop项目的子项目。HBase不同于一般的关系数据库，它是一个适合于非结构化数据存储的数据库。另一个不同的是HBase基于列的而不是基于行的模式。</p>
-<p>HBase中的所有数据文件都存储在Hadoop HDFS文件系统上，主要包括上述提出的两种文件类型：<br>HFile， HBase中KeyValue数据的存储格式，HFile是Hadoop的二进制格式文件，实际上StoreFile就是对HFile做了轻量级包装，即StoreFile底层就是HFile<br>HLog File，HBase中WAL（Write Ahead Log） 的存储格式，物理上是Hadoop的Sequence File</p>
-<p><strong>HDFS</strong>:<br>Hadoop分布式文件系统(HDFS)是指被设计成适合运行在通用硬件(commodity hardware)上的分布式文件系统（Distributed File System）。它和现有的分布式文件系统有很多共同点。但同时，它和其他的分布式文件系统的区别也是很明显的。HDFS是一个高度容错性的系统，适合部署在廉价的机器上。HDFS能提供高吞吐量的数据访问，非常适合大规模数据集上的应用。HDFS放宽了一部分POSIX约束，来实现流式读取文件系统数据的目的。HDFS在最开始是作为Apache Nutch搜索引擎项目的基础架构而开发的。HDFS是Apache Hadoop Core项目的一部分。<br>HDFS有着高容错性（fault-tolerant）的特点，并且设计用来部署在低廉的（low-cost）硬件上。而且它提供高吞吐量（high throughput）来访问应用程序的数据，适合那些有着超大数据集（large data set）的应用程序。HDFS放宽了（relax）POSIX的要求（requirements）这样可以实现流的形式访问（streaming access）文件系统中的数据。</p>
-<p>HDFS采用了主从（Master/Slave）结构模型，一个HDFS集群是由一个NameNode和若干个DataNode组成的。其中NameNode作为主服务器，管理文件系统的命名空间和客户端对文件的访问操作；集群中的DataNode管理存储的数据。</p>
-<p><strong>hive</strong>:<br>hive是基于Hadoop的一个数据仓库工具，用来进行数据提取、转化、加载，这是一种可以存储、查询和分析存储在Hadoop中的大规模数据的机制。hive数据仓库工具能将结构化的数据文件映射为一张数据库表，并提供SQL查询功能，能将SQL语句转变成MapReduce任务来执行。Hive的优点是学习成本低，可以通过类似SQL语句实现快速MapReduce统计，使MapReduce变得更加简单，而不必开发专门的MapReduce应用程序。hive是十分适合数据仓库的统计分析和Windows注册表文件。</p>
-<p>hive 是一种底层封装了Hadoop 的数据仓库处理工具，使用类SQL 的hiveQL 语言实现数据查询，所有hive 的数据都存储在Hadoop 兼容的文件系统（例如，Amazon S3、HDFS）中。hive 在加载数据过程中不会对数据进行任何的修改，只是将数据移动到HDFS 中hive 设定的目录下，因此，hive 不支持对数据的改写和添加，所有的数据都是在加载的时候确定的。</p>
-<p>hive中包含以下四类数据模型：表(Table)、外部表(External Table)、分区(Partition)、桶(Bucket)。</p>
-<p><strong>ZooKeeper</strong>:<br>ZooKeeper是一个分布式的，开放源码的分布式应用程序协调服务，是Google的Chubby一个开源的实现，是Hadoop和Hbase的重要组件。它是一个为分布式应用提供一致性服务的软件，提供的功能包括：配置维护、域名服务、分布式同步、组服务等。<br>ZooKeeper的目标就是封装好复杂易出错的关键服务，将简单易用的接口和性能高效、功能稳定的系统提供给用户。<br>ZooKeeper包含一个简单的原语集，提供Java和C的接口。<br>ZooKeeper代码版本中，提供了分布式独享锁、选举、队列的接口，代码在$zookeeper_home\src\recipes。其中分布锁和队列有Java和C两个版本，选举只有Java版本。<br>————————————————<br>版权声明：本文为CSDN博主「平凡而伟大(百阅生活)」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/forcj/article/details/106377982">https://blog.csdn.net/forcj/article/details/106377982</a></p>
-<h3 id="1-5-关键术语"><a href="#1-5-关键术语" class="headerlink" title="1.5 关键术语"></a>1.5 关键术语</h3><ul>
-<li><p>节点 </p>
-<p>表示一台服务器</p>
-</li>
-<li><p>生产环境</p>
-<p>表示实际的应用服务运行环境，也就是已经正式运行的环境</p>
-</li>
-<li><p>开发环境</p>
-<p>开发一个应用所在得环境，也就是项目开发中得环境，项目未上线</p>
-</li>
-<li><p>集群</p>
-<p>多个节点组成得一个群体，一个集群包含若干个服务器节点。</p>
-</li>
-</ul>
-<h2 id="第二章-Hadoop简介"><a href="#第二章-Hadoop简介" class="headerlink" title="第二章 Hadoop简介"></a>第二章 Hadoop简介</h2><h3 id="2-1-hadoop是什么"><a href="#2-1-hadoop是什么" class="headerlink" title="2.1 hadoop是什么"></a>2.1 hadoop是什么</h3><p>Hadoop是一个由Apache基金会所开发的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/4905336">分布式系统</a>基础架构。</p>
-<p>用户可以在不了解分布式底层细节的情况下，开发分布式程序。充分利用集群的威力进行高速运算和存储。Hadoop实现了一个<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%88%86%E5%B8%83%E5%BC%8F%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/1250388">分布式文件系统</a>（ Distributed File System），其中一个组件是HDFS（Hadoop Distributed File System）。HDFS有高容错性的特点，并且设计用来部署在低廉的（low-cost）硬件上；而且它提供高吞吐量（high throughput）来访问应用程序的数据，适合那些有着超大数据集（large data set）的应用程序。HDFS放宽了（relax）<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/POSIX/3792413">POSIX</a>的要求，可以以流的形式访问（streaming access）文件系统中的数据。Hadoop的框架最核心的设计就是：<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/HDFS/4836121">HDFS</a>和<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/MapReduce/133425">MapReduce</a>。HDFS为海量的数据提供了存储，而MapReduce则为海量的数据提供了计算。</p>
-<h3 id="2-2-Hadoop的优势"><a href="#2-2-Hadoop的优势" class="headerlink" title="2.2 Hadoop的优势"></a>2.2 Hadoop的优势</h3><ul>
-<li><strong>高可靠性</strong>  假设Hadoop计算元素和储存出现故障，而由于维护多个版本工作数据副本，在出现故障时可以对失败的节点重新分布处理。</li>
-<li><strong>高拓展性</strong>  Hadoop是在可用的计算机集群间分配数据并完成计算任务的，这些集群可以方便地扩展到数以千计的节点中</li>
-<li><strong>高效性</strong>  Hadoop能够在节点之间动态地移动数据，并保证各个节点地动态平衡，因此处理速度非常快，同时在MapReduce的思想下，Hadoop是并行工作的，以加快任务处理的速度哦</li>
-<li><strong>高容错性</strong>  自动保存多份副本数据并且能够自动将失败的任务 重新分配</li>
-<li><strong>低成本</strong>  与一体机、商务数据仓库等，hadoop是开源免费的，项目的软件成本会大大降低</li>
-</ul>
-<h3 id="2-3-核心构架"><a href="#2-3-核心构架" class="headerlink" title="2.3 核心构架"></a>2.3 核心构架</h3><ul>
-<li>Hadoop HDFS 一个高可靠、高吞吐量的分布式文件系统</li>
-<li>Hadoop MapReduce 一个分布式的离线并行计算框架</li>
-<li>Hadoop YARN 作业调度与集群资源管理的框架</li>
-<li>Hadoop Common 支持其他模块的工具模块。</li>
-</ul>
-<h2 id="第三章-Hadoop环境搭建"><a href="#第三章-Hadoop环境搭建" class="headerlink" title="第三章 Hadoop环境搭建"></a>第三章 Hadoop环境搭建</h2><h3 id="3-1-安装三台CentOS系统"><a href="#3-1-安装三台CentOS系统" class="headerlink" title="3.1 安装三台CentOS系统"></a>3.1 安装三台CentOS系统</h3><h3 id="3-2-基本工具的安装"><a href="#3-2-基本工具的安装" class="headerlink" title="3.2 基本工具的安装"></a>3.2 基本工具的安装</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> ###安装时间插件，同步时间    </span><br><span class="line">[root@node01 ~]# yum -y install ntp ntpdate</span><br><span class="line">[root@node01 ~]# ntpdate cn.pool.ntp.org    </span><br><span class="line">[root@node01 ~]# hwclock --systohc   </span><br><span class="line">###安装文件上传下载工具    </span><br><span class="line">[root@node01 ~]# yum -y install lrzsz    </span><br><span class="line">###一台安装网络下载工具    </span><br><span class="line">[root@node01 ~]# yum -y install wget</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-3-关闭防火墙"><a href="#3-3-关闭防火墙" class="headerlink" title="3.3 关闭防火墙"></a>3.3 关闭防火墙</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">###查看每台节点的防火墙</span><br><span class="line">[root@node01 ~]# systemctl status firewalld</span><br><span class="line">###每台执行关闭防火墙</span><br><span class="line">[root@node01 ~]# systemctl stop firewalld</span><br><span class="line">###每台执行开机禁止自启动防火墙</span><br><span class="line">[root@node01 ~]# systemctl disable firewalld</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-4-修改hosts文件"><a href="#3-4-修改hosts文件" class="headerlink" title="3.4 修改hosts文件"></a>3.4 修改hosts文件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">###注释或删除前两行的代码</span><br><span class="line">###将集群节点的代码写入hosts文件</span><br><span class="line">###改变hosts文件的目的是为了将ip地址与主机名练习起来</span><br><span class="line">[root@node01 ~]# vim /etc/hosts</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-5-ssh免密码登录"><a href="#3-5-ssh免密码登录" class="headerlink" title="3.5 ssh免密码登录"></a>3.5 ssh免密码登录</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">###每台节点创建一个.ssh的文件夹</span><br><span class="line">[root@node01 ~]#  ssh 192.168.100.101</span><br><span class="line">###每台节点进入~/.ssh文件夹下</span><br><span class="line">[root@node01 ~]#  cd ~/.ssh</span><br><span class="line">###每台节点输入以下命令产生公钥和秘钥</span><br><span class="line">[root@node01 ~]#	ssh-keygen -t rsa -P ‘’</span><br><span class="line">###每台节点将所有的id_rsa.pub文件进行合并（最简单的方法是将所有节点的文件内容追加到node01主机上）</span><br><span class="line">[root@node01 .ssh]# cat ~/.ssh/id_rsa.pub | ssh root@node01 &#x27;cat &gt;&gt; ~/.ssh/authorized_keys&#x27;</span><br><span class="line">[root@node02 .ssh]# cat ~/.ssh/id_rsa.pub | ssh root@node01 &#x27;cat &gt;&gt; ~/.ssh/authorized_keys&#x27;</span><br><span class="line">[root@node03 .ssh]# cat ~/.ssh/id_rsa.pub | ssh root@node01 &#x27;cat &gt;&gt; ~/.ssh/authorized_keys&#x27;</span><br><span class="line">###同理将其余节点的文件内容追加到node02/node03主机上</span><br><span class="line">#! 将node01上的authorized_keys文件分发到其他主机上</span><br><span class="line">[root@node01 .ssh]# scp ~/.ssh/authorized_keys root@node02:~/.ssh/</span><br><span class="line">[root@node01 .ssh]# scp ~/.ssh/authorized_keys root@node03:~/.ssh/</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-6-下载上传jdk"><a href="#3-6-下载上传jdk" class="headerlink" title="3.6 下载上传jdk"></a>3.6 下载上传jdk</h3><ul>
-<li><p>下载jdk-8u291-linux-x64.tar.gz 后上传解压到node01节点上。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@node04 apps]# tar -zxvf jdk-8u291-linux-x64.tar.gz</span><br></pre></td></tr></table></figure></li>
-<li><p>修改/etc/profile文件，追加以下内容:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/opt/apps/jdk1.8.0_291</span><br><span class="line">export JRE_HOME=$JAVA_HOME/jre</span><br><span class="line">export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib/rt.jar</span><br><span class="line">export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin</span><br></pre></td></tr></table></figure></li>
-<li><p>重启/etc/profile文件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@node04 apps]# . /etc/profile</span><br></pre></td></tr></table></figure></li>
-<li><p>测试<code>java -Version</code></p>
-</li>
-</ul>
-<h3 id="3-8-下载安装Hadoop"><a href="#3-8-下载安装Hadoop" class="headerlink" title="3.8 下载安装Hadoop"></a>3.8 下载安装Hadoop</h3><h3 id="3-7-修改配置文件"><a href="#3-7-修改配置文件" class="headerlink" title="3.7 修改配置文件"></a>3.7 修改配置文件</h3><p>**hadoop中有以下配置文件需要进行修改，详情请查看[Hadoop集群配置](<a target="_blank" rel="noopener" href="https://hadoop.apache.org/docs/r3.2.2/hadoop-project-dist/hadoop-common/ClusterSetup.html">Apache Hadoop 3.2.2 – Hadoop Cluster Setup</a>)  **、</p>
-<h4 id="3-7-1-Hadoop-env-sh"><a href="#3-7-1-Hadoop-env-sh" class="headerlink" title="3.7.1 Hadoop-env.sh"></a>3.7.1 Hadoop-env.sh</h4><p><strong>此配置文件是Hadoop一些核心脚本的配置文件，要制定JAVA_HOME</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@node04 hadoop-3.2.2]# vim etc/hadoop/hadoop-env.sh</span><br><span class="line">export JAVA_HOME = /opt/apps/jdk1.8.0_291</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-7-2-core-site-xml"><a href="#3-7-2-core-site-xml" class="headerlink" title="3.7.2 core-site.xml"></a>3.7.2 core-site.xml</h4><p><strong>此配置文件是Hadoop核心的配置文件，对应对Common模块在此配置文件中配置文件系统的访问端口和访问权限</strong></p>
-<ul>
-<li>​    <code>fs.defaultFS</code>文件系统访问路径，由于我们要将node01配置为节点，因此在完全分布式中配置以下值。默认为<code>file:///</code>即本地文件系统，伪分布的时候可配置为<code>hdfs://localhost:9000</code></li>
-<li><code>hadoop.tmp.dir</code> Hadoop运行时的临时存储目录，默认值为/tmp/hadoop-${user.name}，配置后就会在Hadoop安装目录下。</li>
-<li><code>io.file.buffer.size</code>  用作序列化文件处理时读写的大小，默认为4096byte，可以设置的大一些，较大的缓存都可以提供更高的数据传输，但这也就意味着更大的内存消耗和延迟。一般情况下，可以设置为64KB(65536byte)</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;fs.defaultFS&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;hdfs://node04.9000&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;file:/opt/apps/hadoop-3.2.2/tmp&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;io.file.buffer.size&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;131702&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;hadoop.http.staticuser.user&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;root&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;hadoop.proxyuser.root.hosts&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;*&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;hadoop.proxyuser.root.groups&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;*&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="3-7-3-hdfs-site-xml"><a href="#3-7-3-hdfs-site-xml" class="headerlink" title="3.7.3 hdfs-site.xml"></a>3.7.3 hdfs-site.xml</h4><p><strong>此配置文件时<code>HDFS</code>核心的配置文件，对应于<code>HDFS</code>模块，在此配置文件系统数据存储路径和SecondaryNameNode地址等。</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;dfs.namenode.name.dir&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;file:/opt/apps/hadoop-3.2.2/dfs/name&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;dfs.datanode.data.dir&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;file:/opt/apps/hadoop-3.2.2/dfs/data&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;dfs.replication&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;2&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;dfs.namenode.checkpoint.dir&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;file:/opt/apps/hadoop-3.2.2/dfs/namesecondary&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;dfs.namenode.secondary.https-address&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;node6:9869&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-7-4-yarn-site-xml"><a href="#3-7-4-yarn-site-xml" class="headerlink" title="3.7.4 yarn-site.xml"></a>3.7.4 yarn-site.xml</h4><p><strong>此配置文件时Yarn核心的配置文件，对应于Yarn模块，在此配置文件中配置<code>ResourceManger</code>主机名和<code>NodeManger</code>内存大小等</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;mapreduce_shuffle&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;yarn.nodemanager.aux-services.mapreduce_shuffle.class&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;org.apach.mapred.ShuffleHandler&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;yarn.resourcemanager.hostname&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;node02&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;yarm.nademanager.resource.memory-mb&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;2048&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;yarn.nodemanager.resource.detect-hardware-capabilities&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;true&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;yarn.log-aggregation-enable&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;true&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;yarn.log-aggregation.retain-seconds&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;684800&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;yarn.nodemanager.env-whitelist&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-7-5-mapred-site-xml"><a href="#3-7-5-mapred-site-xml" class="headerlink" title="3.7.5 mapred-site.xml"></a>3.7.5 mapred-site.xml</h4><p><strong>此配置文件时MapReduce核心的配置文件，对应对MapRdeuce模块</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;mapreduce.framework.name&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;yarn&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;mapreduce.jobhistory.address&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;node04:10020&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;mapreduce.jobhistory.webapp.address&lt;/name&gt;</span><br><span class="line">    &lt;value&gt;node04:19888&lt;/value&gt;</span><br><span class="line">&lt;/property&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-7-6-workers"><a href="#3-7-6-workers" class="headerlink" title="3.7.6 workers"></a>3.7.6 workers</h4><p><strong>该文件中配置所有DataNode节点主机名</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@node04 hadoop-3.2.2]# vim etc/hadoop/workers</span><br><span class="line">node04</span><br><span class="line">node05</span><br><span class="line">node06</span><br></pre></td></tr></table></figure>
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+</script>
 
 
 
-<h4 id="3-7-7-文件分发"><a href="#3-7-7-文件分发" class="headerlink" title="3.7.7 文件分发"></a>3.7.7 文件分发</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@node04 hadoop-3.2.2]# scp -r /opt/apps root@node05:/opt/</span><br><span class="line">[root@node04 hadoop-3.2.2]# scp -r /opt/apps root@node06:/opt/</span><br></pre></td></tr></table></figure>
+            <div class="cover-btns">
+                <a href="#indexCard" class="waves-effect waves-light btn">
+                    <i class="fa fa-angle-double-down"></i>开始阅读
+                </a>
 
-<h4 id="3-7-8-设置系统变量"><a href="#3-7-8-设置系统变量" class="headerlink" title="3.7.8 设置系统变量"></a>3.7.8 设置系统变量</h4><p>在/etc/profile文件中配置</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">##JAVA_HOME</span><br><span class="line">export JAVA_HOME=/opt/apps/jdk1.8.0_291</span><br><span class="line">export JRE_HOME=$JAVA_HOME/jre</span><br><span class="line">export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib/rt.jar</span><br><span class="line">export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">###Hadoop</span><br><span class="line">export HADOOP_HOME=/opt/apps/hadoop-3.2.2</span><br><span class="line">export HADOOP_LOG_DIR=$HADOOP_HOME/logs</span><br><span class="line">export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin</span><br><span class="line"></span><br><span class="line">###Hadoop User</span><br><span class="line">export HADOOP_USERNAME=root</span><br><span class="line">export HDFS_NAMENODE_USER=$HADOOP_USERNAME</span><br><span class="line">export HDFS_DATANODE_USER=$HADOOP_USERNAME</span><br><span class="line">export HDFS_SECONDARYNAMENODE_USER=$HADOOP_USERNAME</span><br><span class="line">export YARN_RESOURCEMANAGER_USER=$HADOOP_USERNAME</span><br><span class="line">export YARN_NODEMANAGER_USER=$HADOOP_USERNAME</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="第四章-Hadoop之HDFS"><a href="#第四章-Hadoop之HDFS" class="headerlink" title="第四章 Hadoop之HDFS"></a>第四章 Hadoop之HDFS</h2><h3 id="4-1-HDFS的定义"><a href="#4-1-HDFS的定义" class="headerlink" title="4.1 HDFS的定义"></a>4.1 HDFS的定义</h3><p>HDFS全称为：Hadoop Distributed File System，它是一个文件系统，用于存储文件，通过目录树来定位；其次，他是分布式的，由很多服务联合起来实现其功能，集群中的服务器有各自的角色。</p>
-<p>HDFS的应用场景：适合一次写入，多次读出的场景，且不支持文件的修改。适合用来做数据分析，并不适合用来做网盘应用。</p>
-<h3 id="4-2-HDFS的优缺点"><a href="#4-2-HDFS的优缺点" class="headerlink" title="4.2 HDFS的优缺点"></a>4.2 HDFS的优缺点</h3><p><strong>优点</strong>：</p>
-<ul>
-<li>支持超大文件。</li>
-<li>检测和快速应对硬件的故障。</li>
-<li>流式数据访问。 的数据处理规模比较大，应用一次需要访问大量的数据，同时这些应用一般都是批量处理，而不是用户交互式处理。应用程序能以流的形式访问数据集。主要的是数据的吞吐量，而不是访问速度。</li>
-<li>简化的一致性模型。大部分操作文件时，需要一次写入，多次读取。在</li>
-<li>高容错性。数据自动保存多个副本，副本丢失后自动恢复。中，一个文件一旦经过创建、写入、关闭后，一般就不需要修改了。这样简单的一致性模型，有利于提高吞吐量。</li>
-</ul>
-<p><strong>缺点</strong>：</p>
-<ul>
-<li>不适合低延迟数据访问，比如毫秒级的存储数据，是做不到的；</li>
-</ul>
-<ul>
-<li>不适合存储大量的小文件</li>
-<li>不支持用户的写入、修改文件、</li>
-<li>不支持超强的事务。没有像关系型数据库那样，对事务有强有力的支持</li>
-</ul>
-<h3 id="4-3-HDFS技术架构"><a href="#4-3-HDFS技术架构" class="headerlink" title="4.3 HDFS技术架构"></a>4.3 HDFS技术架构</h3><p><img src="https://hadoop.apache.org/docs/r3.2.2/hadoop-project-dist/hadoop-hdfs/images/hdfsarchitecture.png"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">一.NameNode</span><br><span class="line">    就是Master，他是一个主管，管理者。</span><br><span class="line">1&gt;.管理HDFS的名称空间；</span><br><span class="line">2&gt;.配置副本策略；</span><br><span class="line">3&gt;.管理数据块（Block）映射信息；</span><br><span class="line">4&gt;.处理客户端读写请求；</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">二.DataNode</span><br><span class="line">    就是Slave。NameNode下达命令，DataNode执行实际的操作。</span><br><span class="line">1&gt;.存储实际的数据块；</span><br><span class="line">2&gt;.执行数据块的读/写操作；</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">三.Client</span><br><span class="line">    就是客户端。</span><br><span class="line">1&gt;.文件切分，文件上传HDFS的时候，Client将文件切分成一个一个的Block，然后进行上传；</span><br><span class="line">2&gt;.与NameNode交互，获取文件的位置信息；</span><br><span class="line">3&gt;.与Datanode交互，读取或者写入数据；</span><br><span class="line">4&gt;.Client提供一些命令来管理HDFS，比如NameNode格式化；</span><br><span class="line">5&gt;.Client可以通过一些命令来访问HDFS，比如对HDFS增删改查操作；</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">四.Secondary NameNode</span><br><span class="line">    并非NameNode的热备，当NameNode刮掉的时候，它并不能马上替换NameNode并提供服务。</span><br><span class="line">1&gt;.辅助NameNode，分担其工作量，比如定期合并Fsimage和Edits，并推送给NameNode；</span><br><span class="line">2&gt;.在紧急情况下，可辅助恢复NameNode；</span><br></pre></td></tr></table></figure>
-
-<h4 id="4-3-1-Block"><a href="#4-3-1-Block" class="headerlink" title="4.3.1 Block"></a>4.3.1 Block</h4><ul>
-<li>数据块是HDFS中数据的最基本的储存单位。</li>
-<li>HDFS中文件在物理上是分块存储（Block），block块的大小可以通过配置参数（dfs.blocksize）来规定，默认大小在Hadoop2.x版本是* 128M，在Hadoop1.x版本中是64M。    默认保存3份。</li>
-<li>切块可以使文件保存在不同的节点上，能储存超大文件</li>
-<li>有利于数据的复制，便于快速备份</li>
-</ul>
-<p>代码演示block的功能</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> cn.edu.zut.hadoop.hdfs;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HDFSQuick</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">        BufferedInputStream in = <span class="keyword">new</span> BufferedInputStream(<span class="keyword">new</span> FileInputStream(<span class="string">&quot;D:\\hadoop-3.2.2.tar.gz&quot;</span>));</span><br><span class="line">        <span class="comment">//文件编号</span></span><br><span class="line">        <span class="keyword">int</span> n = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">//文件读取状态，是否未被读取完毕</span></span><br><span class="line">        <span class="keyword">boolean</span> status = <span class="keyword">true</span>;</span><br><span class="line">        <span class="comment">//如果文件没有被读取完毕则继续读取</span></span><br><span class="line">        <span class="keyword">while</span>(status)&#123;</span><br><span class="line">            <span class="comment">//创建一个文件，便是一个文件块</span></span><br><span class="line">            File file = <span class="keyword">new</span> File(<span class="string">&quot;D:\\hadoop&quot;</span>+n);</span><br><span class="line">            <span class="comment">//如果文件不存在，则创建。负责显示文件不存在的异常</span></span><br><span class="line">            <span class="keyword">if</span> (!file.exists())&#123;</span><br><span class="line">                file.createNewFile();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//创建该文件块的输出流</span></span><br><span class="line">            BufferedOutputStream os = <span class="keyword">new</span> BufferedOutputStream(<span class="keyword">new</span> FileOutputStream(file));</span><br><span class="line">            <span class="comment">//创建IO缓冲区，提高读写效率。类似HDFS的io。buffer</span></span><br><span class="line">            <span class="keyword">byte</span>[] buffer = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">128</span>*<span class="number">1024</span>];<span class="comment">//128M</span></span><br><span class="line">            <span class="comment">//只要文件小于128M就循环读取</span></span><br><span class="line">            <span class="keyword">while</span>(file.length()&lt;<span class="number">128</span>*<span class="number">1024</span>*<span class="number">1024</span>)&#123;</span><br><span class="line">                <span class="comment">//将输入流中的数据读取到buffer中，并返回读取的字节数，即len</span></span><br><span class="line">                <span class="keyword">int</span> len = in.read(buffer);</span><br><span class="line">                <span class="comment">//如果len=-1，表示文件读取完毕，因此变更文件的读取状态为完毕，同时结束当前所在的循环</span></span><br><span class="line">                <span class="keyword">if</span> (len==-<span class="number">1</span>)&#123;</span><br><span class="line">                    status=<span class="keyword">false</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">//没有执行上一步，说明从in中读取了一定的字节数据到buffer中，那么就将该数据写道文件中</span></span><br><span class="line">                os.write(buffer,<span class="number">0</span>,len);</span><br><span class="line">            &#125;</span><br><span class="line">            os.flush();</span><br><span class="line">            os.close();</span><br><span class="line">            n++;</span><br><span class="line">        &#125;</span><br><span class="line">        in.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+                
+                    <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
+                        <i class="fab fa-github-alt"></i>Github
+                    </a>
+                
+            </div>
+            <div class="cover-social-link">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
 
 
 
-
-<h4 id="4-3-2-NameNode"><a href="#4-3-2-NameNode" class="headerlink" title="4.3.2 NameNode"></a>4.3.2 NameNode</h4><ul>
-<li><p>NameNode  用于储存元数据，管理Datanode节点的数据</p>
-</li>
-<li><p>NameNode 会将管理的数据块的数据放入数据池（Block pool）中</p>
-</li>
-<li><p>NameNode 维护HDFS中的元数据信息：</p>
-<ul>
-<li>文件的储存路径</li>
-<li>文件和Block之间关系的信息</li>
-<li>Block的数量信息</li>
-<li>Block和DataNode之间的关系信息</li>
-</ul>
-</li>
-<li><p>每一条元数据大概是150B大小</p>
-</li>
-<li><p>元数据信息会持续化到NameNode节点的硬盘上的edits文件中，最终整理到fsimage文件</p>
-</li>
-<li><p>储存元数据的目录：dfs/name/current</p>
-</li>
-<li><p>持久化的文件包括：</p>
-<ul>
-<li>fsimge：元数据镜像文件。储存NameNode的元数据信息，并不是实时同步内存中的数据。一般而言，fsimage中的元数据是落后与内存中的元数据</li>
-<li>edits：操作日志文件，记录了NameNode所执行的操作</li>
-</ul>
-</li>
-<li><p>当有写请求时，NameNode会首先写该操作先写到磁盘上的edits_inprogress文件中，当edits_inprogress文件中，当文件写成功后才会修改内存，内存修改成功后向客户端返回成功信号，而此时fsimage中的数据并没有发生改动。所以，fsimage中的数据并不是实时的数据，而是在达到条件时再进更新</p>
-</li>
-<li><p>无论Hadoop1.x还是2.x和3.x，当Hdfs启动时，NameNode会做一次edits和fsimage合并操作。这样做的目的是确保fsimage里的元素据更新</p>
-</li>
-<li><p>NameNode通过RPC心跳机制来检测DataNode是否还活着</p>
-</li>
-<li><p>如果HDFS处于安全模式，只能对外提供读服务，不能提供写服务</p>
-</li>
-<li><p>产生edits日志的时机：</p>
-<ul>
-<li>手动触发滚动操作</li>
-</ul>
-<p><code> hdfs dfsadmin -rollEdits</code></p>
-<ul>
-<li>启动NameNode后触发</li>
-</ul>
-<p>在启动NameNode进程启动后，会自动滚出新的edits文件。</p>
-<ul>
-<li>达到CheckPoint时机</li>
-</ul>
-</li>
-</ul>
-<h4 id="4-3-3-DataNode"><a href="#4-3-3-DataNode" class="headerlink" title="4.3.3 DataNode"></a>4.3.3 DataNode</h4><h4 id="4-3-4-SecondaryNamenode"><a href="#4-3-4-SecondaryNamenode" class="headerlink" title="4.3.4 SecondaryNamenode"></a>4.3.4 SecondaryNamenode</h4><h4 id="4-3-5-CheckPoint-Node"><a href="#4-3-5-CheckPoint-Node" class="headerlink" title="4.3.5 CheckPoint Node"></a>4.3.5 CheckPoint Node</h4><h3 id="4-4-HDFS-API-操作"><a href="#4-4-HDFS-API-操作" class="headerlink" title="4.4 HDFS API 操作"></a>4.4 HDFS API 操作</h3><p>开发程序Hadoop不可能一直在Linux上去执行，大多人还是选择在Window上做代码开发，最后运行时放到Liunx上操作，因此，我们需要在window下配置Hadoop的开发环境。</p>
-<ul>
-<li>window有Java环境</li>
-<li>JAVA版本必须支持1.8以上</li>
-<li>必须安装Maven环境</li>
-<li>安装idea</li>
-<li>idea需要安装Big Data Tools插件</li>
-</ul>
-<h3 id="4-5-HDFS的操作"><a href="#4-5-HDFS的操作" class="headerlink" title="4.5 HDFS的操作"></a>4.5 HDFS的操作</h3><p><strong>创建目录 ，文件上传，文件下载，文件删除，文件重命名，文件详情</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.apache.hadoop.conf.Configuration;</span><br><span class="line"><span class="keyword">import</span> org.apache.hadoop.fs.*;</span><br><span class="line"><span class="keyword">import</span> org.junit.After;</span><br><span class="line"><span class="keyword">import</span> org.junit.Before;</span><br><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.net.URI;</span><br><span class="line"><span class="keyword">import</span> java.net.URISyntaxException;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HDFSOperate</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> FileSystem fs;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Before</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> <span class="keyword">throws</span> URISyntaxException, IOException, InterruptedException </span>&#123;</span><br><span class="line">        Configuration configuration = <span class="keyword">new</span> Configuration();</span><br><span class="line">        fs = FileSystem.get(<span class="keyword">new</span> URI(<span class="string">&quot;hdfs://node01:9000&quot;</span>),configuration,<span class="string">&quot;root&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@After</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        fs.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">mkdir</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        fs.mkdirs(<span class="keyword">new</span> Path(<span class="string">&quot;/dd&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">put</span><span class="params">()</span> <span class="keyword">throws</span>  IOException </span>&#123;</span><br><span class="line">        fs.copyFromLocalFile(<span class="keyword">new</span> Path(<span class="string">&quot;D:\\hadoop-3.2.2.tar.gz&quot;</span>),<span class="keyword">new</span> Path(<span class="string">&quot;/bb&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">delete</span><span class="params">()</span> <span class="keyword">throws</span>  IOException </span>&#123;</span><br><span class="line">        fs.delete(<span class="keyword">new</span> Path(<span class="string">&quot;/dd&quot;</span>),<span class="keyword">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">remove</span><span class="params">()</span> <span class="keyword">throws</span>  IOException </span>&#123;</span><br><span class="line">        fs.rename(<span class="keyword">new</span> Path(<span class="string">&quot;/cc&quot;</span>),<span class="keyword">new</span> Path(<span class="string">&quot;/hadoop-3.2.2.tar.gz&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fileInfo</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">        RemoteIterator&lt;LocatedFileStatus&gt; listFile = fs.listFiles(<span class="keyword">new</span> Path(<span class="string">&quot;/&quot;</span>),<span class="keyword">true</span>);</span><br><span class="line">        <span class="keyword">while</span> (listFile.hasNext())&#123;</span><br><span class="line">            LocatedFileStatus status = listFile.next();</span><br><span class="line">            System.out.println(<span class="string">&quot;文件名：&quot;</span>+status.getPath().getName()+<span class="string">&quot;, &quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;大小：&quot;</span>+status.getLen()+<span class="string">&quot;, &quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;权限：&quot;</span>+status.getPermission()+<span class="string">&quot;, &quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;所属组：&quot;</span>+status.getGroup());</span><br><span class="line">            BlockLocation[] blockLocations = status.getBlockLocations();</span><br><span class="line">            <span class="keyword">for</span> (BlockLocation blockLocation: blockLocations)&#123;</span><br><span class="line">                String[] hosts = blockLocation.getHosts();</span><br><span class="line">                <span class="keyword">for</span> (String host : hosts)&#123;</span><br><span class="line">                    System.out.println(host);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println(<span class="string">&quot;--------------------------------&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <a href="mailto:1683770168@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
 
 
 
@@ -473,6 +427,9 @@
 
 
 
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1683770168" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1683770168" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
 
 
 
@@ -480,612 +437,567 @@
 
 
 
-      
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://codejfeng.github.com/2021/08/31/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/" data-id="ckv5xrjaj0002pww75dzp09g5" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/" rel="tag">linux</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
+    
+</div>
 
+<script>
+    $(function () {
+        let coverSlider = $('.carousel');
 
-  
-    <article id="post-java语言程序设计" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/07/14/java%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="article-date">
-  <time datetime="2021-07-14T07:19:58.000Z" itemprop="datePublished">2021-07-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+        //用户触摸轮播自动 restartPlay 是否生效
+        let initUserPressedOrDraggedActive = false
+
+        //用户触摸轮播自动 restartPlay
+        function initUserPressedOrDragged(instance) {
+            setInterval(() => {
+                if (instance.pressed || instance.dragged) {
+                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
+                    restartPlay()
+                }
+            }, 1000)
+        }
+
+        coverSlider.carousel({
+            duration: Number('120'),
+            fullWidth: true,
+            indicators: 'true' === 'true',
+            onCycleTo() {
+                if (!initUserPressedOrDraggedActive) {
+                    // console.log('initUserPressedOrDraggedActive')
+                    initUserPressedOrDragged(this)
+                    initUserPressedOrDraggedActive = true
+                }
+            },
+        })
+
+        let carouselIntervalId;
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/07/14/java%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">java语言程序设计</a>
-    </h1>
-  
+        // Loop to call the next cover article picture.
+        let autoCarousel = function () {
+            carouselIntervalId = setInterval(function () {
+                coverSlider.carousel('next');
+            }, 5000);
+        };
+        autoCarousel();
+        
 
-      </header>
+        function restartPlay() {
+            
+            clearInterval(carouselIntervalId);
+            autoCarousel();
+            
+        };
+
+        
+        // prev and next cover post.
+        $('#prev-cover').click(function () {
+            coverSlider.carousel('prev');
+            restartPlay();
+        });
+        $('#next-cover').click(function () {
+            coverSlider.carousel('next');
+            restartPlay();
+        });
+        
+    });
+</script>
+
+
+
+<main class="content">
+
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><h2 id="第一章-面对对象的数据结构"><a href="#第一章-面对对象的数据结构" class="headerlink" title="第一章 面对对象的数据结构"></a>第一章 面对对象的数据结构</h2><h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>​    数据结构是按照某种方式组织的数据集合。</p>
-<p>​    数据结构不仅储存数据，而且支持处理该结构中数据的操作</p>
-<p>​    本章将介绍线性表、堆栈、队列和二叉树等四种经典的数据结构</p>
-<p>​    对象是靠new出来的。一个数据结构就是一个储存着其他对象的对象，储存在数据结构中的对象被称为数据或元素。</p>
-<p>​    有人称：数据结构为容器对象或集合对象</p>
-<p>​    本质上就是一个声明的类，数据域存储数据，提供支持对数据结构操作的方法，比如对数据的输入和删除。</p>
-<h3 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h3><p>​        线性表的操作：</p>
-<ol>
-<li><p>链表尾插新元素</p>
-</li>
-<li><p>线性表插入新的元素</p>
-</li>
-<li><p>线性表删除下标元素</p>
-</li>
-<li><p>线性表查询元素</p>
-</li>
-<li><p>链表得到下标值</p>
-<p><code>暂不更新</code></p>
-</li>
-</ol>
-<h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><ol>
-<li><p>链表尾插新元素</p>
-</li>
-<li><p>线性表插入新的元素</p>
-</li>
-<li><p>线性表删除下标元素</p>
-</li>
-<li><p>线性表查询元素</p>
-</li>
-<li><p>链表得到下标值</p>
-</li>
-</ol>
-<p><strong>代码展示：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br></pre></td><td class="code"><pre><span class="line">interface IList&lt;E&gt; &#123;</span><br><span class="line">    public void add(E e);</span><br><span class="line">    public void insert(int i ,E e);</span><br><span class="line">    public void remove(int i );</span><br><span class="line">    public E get(int i);</span><br><span class="line">    public int indexOf(E e);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class MyLinkedList&lt;E&gt;implements IList&lt;E&gt; &#123;</span><br><span class="line"></span><br><span class="line">    //设置头节点和尾节点</span><br><span class="line">    Node&lt;E&gt; head = new Node&lt;&gt;(null,null);</span><br><span class="line">    Node&lt;E&gt; tail = head;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void add(E e) &#123;</span><br><span class="line">        //将e转化为Node类型才能进行插入操作</span><br><span class="line">        Node&lt;E&gt; data = new Node(e ,null);//调用node双参构造函数</span><br><span class="line">        tail.setNext(data);</span><br><span class="line">        tail = data;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void insert(int i, E e) &#123;</span><br><span class="line">        Node&lt;E&gt; data = new Node&lt;&gt;(e,null);</span><br><span class="line">        //临时指针，找到i-1个位置。</span><br><span class="line">        Node&lt;E&gt; p = head.getNext();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void remove(int i) &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public E get(int i) &#123;</span><br><span class="line">        return null;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public int indexOf(E e) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void PrintList() &#123;</span><br><span class="line">        Node&lt;E&gt; p = head.getNext();</span><br><span class="line">        while (p != null) &#123;</span><br><span class="line">            System.out.print(p.getData() + &quot;\t&quot;);</span><br><span class="line">            p = p.getNext();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class MyList&lt;E&gt; implements IList&lt;E&gt;&#123;</span><br><span class="line">    //定义储存结构</span><br><span class="line">    private int maxSize = 10;</span><br><span class="line">    private Object[] element = new Object[maxSize];</span><br><span class="line">    private int Size = 0;</span><br><span class="line"></span><br><span class="line">    public MyList()&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override//添加数 头插法</span><br><span class="line">    public void add(E e) &#123;</span><br><span class="line">        if (Size+1&gt;maxSize)&#123;</span><br><span class="line">            System.out.println(&quot;添加失败&quot;);</span><br><span class="line">            return ;</span><br><span class="line">        &#125;</span><br><span class="line">        this.element[Size] = e;</span><br><span class="line">        Size ++;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void insert(int i, E e) &#123;</span><br><span class="line">        //先判断i是否存在</span><br><span class="line">        if (i &gt;= maxSize || i &lt;0 )&#123;</span><br><span class="line">            System.out.println(&quot;插入位置无效&quot;);</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        //第一步 移动数据</span><br><span class="line">        for(int j = Size - 1 ; j&gt;= i ; j--)&#123;</span><br><span class="line">            this.element[j+1] =this.element[j];</span><br><span class="line">        &#125;</span><br><span class="line">        this.element[i] = e;</span><br><span class="line">        this.Size++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void remove(int i) &#123;</span><br><span class="line">        //判断i是否存在</span><br><span class="line">        if (i&gt;=maxSize||i&lt;0)&#123;</span><br><span class="line">            System.out.println(&quot;删除位置无效&quot;);</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        this.element[i] = null ;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public E get(int i) &#123;</span><br><span class="line">        //需要强转</span><br><span class="line">        return (E)this.element[i];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public int indexOf(E e) &#123;</span><br><span class="line">        //第一次索引处返回</span><br><span class="line">        for(int j = 0 ; j &lt; this.Size ;j++)&#123;</span><br><span class="line">            if (this.element[j].equals(e))&#123;</span><br><span class="line">                return j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return -1;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public String toString()&#123;</span><br><span class="line">        for(int i = 0 ; i&lt;maxSize ; i++)&#123;</span><br><span class="line">            System.out.print(this.element[i]+&quot; &quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        return null;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"> class Node&lt;E&gt; &#123;</span><br><span class="line">    E data;//存值域</span><br><span class="line">    Node&lt;E&gt; next;//存下一指针域</span><br><span class="line"></span><br><span class="line">    public Node(E data)&#123;</span><br><span class="line">        //有参构造</span><br><span class="line">        this.data = data ;</span><br><span class="line">        this.next = null ;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Node(E data , Node next )&#123;</span><br><span class="line">        this.data = data;</span><br><span class="line">        this.next = next;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public E getData()&#123;</span><br><span class="line">        return data;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">     public void setData()&#123;</span><br><span class="line">        this.data = data;</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">    public Node&lt;E&gt; getNext() &#123;</span><br><span class="line">        return next;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setNext(Node&lt;E&gt; next) &#123;</span><br><span class="line">        this.next = next;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="堆栈和队列"><a href="#堆栈和队列" class="headerlink" title="堆栈和队列"></a>堆栈和队列</h3><p>堆栈 ： 实现对数据的先进后出</p>
-<p>队列 ： 实现对数据的先进先出</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">public interface IStack &lt;E&gt; &#123;//堆栈代码</span><br><span class="line">    public boolean isEmpty();</span><br><span class="line">    public E pop();</span><br><span class="line">    public void push(E e);</span><br><span class="line">    public int length();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class SqStack&lt;E&gt; implements IStack&lt;E&gt;&#123;</span><br><span class="line"></span><br><span class="line">    Object[] StackElem = new Object[10];</span><br><span class="line">    int top = 0;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public boolean isEmpty() &#123;</span><br><span class="line">        if (top == 0 || top &lt;0) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            return  false;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public E pop() &#123;</span><br><span class="line">        if (isEmpty())&#123;</span><br><span class="line">            System.out.println(&quot;栈空&quot;);</span><br><span class="line">            return null;</span><br><span class="line">        &#125;</span><br><span class="line">        E e = (E) StackElem[--top];</span><br><span class="line">        return e;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void push(E e) &#123;</span><br><span class="line">        if (top==StackElem.length)&#123;</span><br><span class="line">            System.out.println(&quot;栈满，无法放栈&quot;);</span><br><span class="line">            return;</span><br><span class="line">        &#125;else &#123;</span><br><span class="line">            StackElem[top] = e;</span><br><span class="line">            top++;</span><br><span class="line">        &#125;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public int length() &#123;</span><br><span class="line">        return top;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class  Main&#123;//测试代码</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Scanner sc = new Scanner(System.in);</span><br><span class="line">        IStack&lt;Integer&gt; list = new SqStack&lt;Integer&gt;();</span><br><span class="line">        for (int i =0 ;i&lt; 10;i++ )&#123;</span><br><span class="line">            list.push(i);</span><br><span class="line">        &#125;</span><br><span class="line">        for (int i = 0 ; i&lt; 10 ;i++)&#123;</span><br><span class="line">            System.out.println(list.pop());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p><code>队列代码</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">public class queue&lt;E&gt; implements IStack&lt;E&gt;&#123;</span><br><span class="line">    Object[] QueueElem = new Object[10];</span><br><span class="line">    int front = 0 ; int rear = 0;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public boolean isEmpty() &#123;</span><br><span class="line">        if (front == rear) return true;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public E pop() &#123;</span><br><span class="line">        return (E)QueueElem[front++];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void push(E e) &#123;</span><br><span class="line">        if (front+1%10==rear)&#123;</span><br><span class="line">            System.out.println(&quot;队满，无法进队&quot;);</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        rear = (rear+1)%10;</span><br><span class="line">        QueueElem[rear] = e ;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public int length() &#123;</span><br><span class="line">        return Math.abs(rear-front);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="二叉树"><a href="#二叉树" class="headerlink" title="二叉树"></a>二叉树</h3><hr>
-<h2 id="第二章-Java的集合框架"><a href="#第二章-Java的集合框架" class="headerlink" title="第二章 Java的集合框架"></a>第二章 Java的集合框架</h2><h3 id="引言-1"><a href="#引言-1" class="headerlink" title="引言"></a>引言</h3><p>​    在java中还引入了几种可以有效组织和处理数据的接口和类，这些接口和类组成了Java的集合框架。（Java Collection Framework）。</p>
-<p>​    一个集合就是储存数据的一个容器，一般将这些对象称为集合的元素。Java的集合构架支持三种类型：规则集（set）、线性表（list）和图（map），分别定义在Set、List与Map中。</p>
-<p><img src="C:\Users\16837\AppData\Roaming\Typora\typora-user-images\image-20210718091625898.png" alt="image-20210718091625898"></p>
-<p><img src="C:\Users\16837\AppData\Roaming\Typora\typora-user-images\image-20210718091724644.png" alt="image-20210718091724644"></p>
-<p>注：在Java中，所有集合类都位于java.util包下，但支持多线程的集合类位于java.util.concurrent包下。</p>
-<p>注：Java集合框架中所有的具体类都实现Cloneable和Serializable接口，所以他们的类都是可复制和可序化的。</p>
-<h3 id="Collection接口和AbstractCollection类"><a href="#Collection接口和AbstractCollection类" class="headerlink" title="Collection接口和AbstractCollection类"></a>Collection接口和AbstractCollection类</h3><table>
-<thead>
-<tr>
-<th align="left">java.util.Collection</th>
-<th align="left"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">add(o:Object):boolean//All</td>
-<td align="left">为该集合添加一个元素//添加集合o的全部元素</td>
-</tr>
-<tr>
-<td align="left">clean():void</td>
-<td align="left">删除所有元素</td>
-</tr>
-<tr>
-<td align="left">contain(o:boolean):Boolean//All</td>
-<td align="left">如果集合包含元素O，则返回true//包含集合o的全部元素</td>
-</tr>
-<tr>
-<td align="left">equals(o:Object):boolean</td>
-<td align="left">如果该集合等于另一个集合o，则返回true</td>
-</tr>
-<tr>
-<td align="left">isEmpty():boolean</td>
-<td align="left">判断集合是否为空</td>
-</tr>
-<tr>
-<td align="left">remove(o:OObject):boolean//All</td>
-<td align="left">删除集合中的元素o//删除集合o</td>
-</tr>
-<tr>
-<td align="left">retainAll(c:collection):boolean</td>
-<td align="left">含有集合c，就返回true</td>
-</tr>
-<tr>
-<td align="left">size():int</td>
-<td align="left">返回该集合中元素个数</td>
-</tr>
-<tr>
-<td align="left">toArray():Oject[]</td>
-<td align="left">返回该集合中的所有元素构成的数组对象</td>
-</tr>
-<tr>
-<td align="left">toArray(array:Object[])：Object[]</td>
-<td align="left">返回该集合中指定类型的元素构成的数组</td>
-</tr>
-</tbody></table>
-<p>注：Collection接口中有些方法不能在子类中实现。在这种情况下，这种方法需要抛出异常java.lang.UnsupportedOperationException,该异常是RuntimeException异常的一个子类。项目中可以用到着一点，回想一下，圆柱类Cylinder继承圆类Circle的求周长方法findperimete，而方法findPerimeter在Cylinder类中毫无意义，因就可以在Cylinder类中声明如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public double findPerimete ( ) &#123;</span><br><span class="line"></span><br><span class="line">	throw new UnsupportOperationException (&quot;Method not supported&quot;) ;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="规则集Set"><a href="#规则集Set" class="headerlink" title="规则集Set"></a>规则集Set</h3><p>​        Set接口扩展Collection接口，它没有引入新的方法和常量，只是规定它的实例不能包含相同的元素。。实现Set接口的具体类必须保证不能向它添加重复的元素。也就是说，在一个规则集中，存在元素e1，e2，使得e1.equal(e2)的返回值为true。</p>
-<p>​        Set接口的三个具体类是HashSet、linkedHashSet和TreeSet。</p>
-<h4 id="散列集HashSet"><a href="#散列集HashSet" class="headerlink" title="散列集HashSet"></a>散列集HashSet</h4><p>​        HashSet类是实现接口的具体类。HashSet可以储存互不相同的任何元素。考虑到效率因素，添加到散列集的对象必须实现hashCode方法，适当地散列分布散列码。如Integer类中的haseCode方法返回的就是int值。Character类中的hashCode方法的返回值是字符的Unicode码。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">       Set set = new HashSet();//定义一个hashSet值</span><br><span class="line">       String text = &quot; Have a good day . Have a good class !&quot;;</span><br><span class="line">       text+=&quot;Have a good visit . Have fun&quot;;</span><br><span class="line">       StringTokenizer st = new StringTokenizer(text,&quot; .!?&quot;);//将String中的单词划分出来添加到hashSet</span><br><span class="line">       while (st.hasMoreTokens())&#123;</span><br><span class="line">           set.add(st.nextToken());</span><br><span class="line">       &#125;</span><br><span class="line">       System.out.println(set);</span><br><span class="line">       Iterator iterator = set.iterator();</span><br><span class="line">       while(iterator.hasNext())&#123;</span><br><span class="line">           System.out.print(iterator.next()+&quot; &quot;);</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">  //运行结果：</span><br><span class="line">  //[a, Have, visit, good, day, class, fun]</span><br><span class="line">  //a Have visit good day class fun </span><br></pre></td></tr></table></figure>
-
-<p>例子说明：StringTokebizer方法提取单词，并把他们添加到规则集中。如果一个单词如“good”，添加多次，则只有一个会被存储，因为规则集中不允许有重复的元素。</p>
-<p>​        集合中的但粗没有按插入时的储存顺序，因为散列集中的元素没有特殊顺序。要给他们排序需要使用LinkedHashSet类。</p>
-<h4 id="链式散列集LinkedhashSet"><a href="#链式散列集LinkedhashSet" class="headerlink" title="链式散列集LinkedhashSet"></a>链式散列集LinkedhashSet</h4><p>​        在HashSet中元素是没有顺序的，而在LinkedHashSet中，可以按元素插入集合的顺序进行提取，可以使用无参构造方法创建Linked Hash Set的对象。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">        Set set = new LinkedHashSet();</span><br><span class="line">        String text = &quot; Have a good day . Have a good class !&quot;;</span><br><span class="line">        text+=&quot;Have a good visit . Have fun&quot;;</span><br><span class="line">        StringTokenizer st = new StringTokenizer(text,&quot; .!?&quot;);</span><br><span class="line">        while (st.hasMoreTokens())&#123;</span><br><span class="line">            set.add(st.nextToken());</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(set);</span><br><span class="line">        Iterator iterator = set.iterator();</span><br><span class="line">        while(iterator.hasNext())&#123;</span><br><span class="line">            System.out.print(iterator.next()+&quot; &quot;);</span><br><span class="line">      &#125;</span><br><span class="line">&#125; </span><br><span class="line">//运行结果：</span><br><span class="line">//[Have, a, good, day, class, visit, fun]</span><br><span class="line">//Have a good day class visit fun </span><br></pre></td></tr></table></figure>
-
-<p>例子说明：LinkedHashSet是一个规则集，所以不允许存储重复的元素。</p>
-<p><strong>如果不需要使元素按其插入的顺序进行存储，因该使用HashSet。它的效率比LinkedHashSet要高。</strong></p>
-<h4 id="树形集TreeSet"><a href="#树形集TreeSet" class="headerlink" title="树形集TreeSet"></a>树形集TreeSet</h4><p>SortedSet是Set的一个子接口，它保证规则集中的元素是有序的。TreeSet是实现SortedSet接口的具体类。只有当对象之间可以互相比较的时候，才可以将他们添加到树形集TreeSet中。有两种方法可以实现对象的比较：</p>
-<ul>
-<li>使用Comparable接口。由于添加到规则集内的对象是Comparable的实例，所以他们可以使用compareTo方法来进行比较。这种方法的定义通常称为自然顺序（natural order）</li>
-<li>如果该类不支持Comparable接口。或者在实现Comparable接口的类中不想使用CompareTo方法进行比较，可以给规则集的元素指定一个比较器。这种方法被称为比较器顺序。</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Set set = <span class="keyword">new</span> HashSet();</span><br><span class="line">        String text = <span class="string">&quot; Have a good day . Have a good class !&quot;</span>;</span><br><span class="line">        text+=<span class="string">&quot;Have a good visit . Have fun&quot;</span>;</span><br><span class="line">        StringTokenizer st = <span class="keyword">new</span> StringTokenizer(text,<span class="string">&quot; .!?&quot;</span>);</span><br><span class="line">        <span class="keyword">while</span> (st.hasMoreTokens())&#123;</span><br><span class="line">            set.add(st.nextToken());</span><br><span class="line">        &#125;</span><br><span class="line"><span class="comment">//        System.out.println(set);</span></span><br><span class="line">        TreeSet treeSet = <span class="keyword">new</span> TreeSet(set);</span><br><span class="line">        System.out.println(treeSet);</span><br><span class="line">        Iterator iterator = set.iterator();</span><br><span class="line">        <span class="keyword">while</span>(iterator.hasNext())&#123;</span><br><span class="line">            System.out.print(iterator.next()+<span class="string">&quot; &quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">   <span class="comment">//运行结果</span></span><br><span class="line">   <span class="comment">//[Have, a, class, day, fun, good, visit]</span></span><br><span class="line"><span class="comment">//a Have visit good day class fun</span></span><br></pre></td></tr></table></figure>
-
-<p>​        使用TreeSet方法，每次添加字符串的时候，都会给字符串重新排序。使用例子中的方法一般效率你较高，因为它只对字符串进行一次排序。</p>
-<h3 id="比较器接口Comparator"><a href="#比较器接口Comparator" class="headerlink" title="比较器接口Comparator"></a>比较器接口Comparator</h3><p>​    当元素可能不是java.lang.Comparable的实例或者不能互相比较，可以定 义一个比较器来比较这些元素。要做到这点，创建一个java.util.Comparator接口的类、Comparator接口有两个方法compare和equals。</p>
-<ul>
-<li>public int compare（Object element1 , Object element2）</li>
-<li>public boolean equals(Object element)</li>
-</ul>
-<h3 id="线性表List"><a href="#线性表List" class="headerlink" title="线性表List"></a>线性表List</h3><p>​        线性表不仅支持重复元素的存储，而且支持用户指定他们的储存位置，用户可以使用下标访问元素。</p>
-<p>​        List接口拓展Collection接口，定义了一个支持元素重复的有序集合。List添加了面向位置的操作，并且添加了能够双向遍历线性表的新迭代探子。</p>
-<table>
-<thead>
-<tr>
-<th>java.util.List</th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>add.(index: int ,  c :  Object )  :  boolean</td>
-<td>在指定下标位置添加一个新的元素</td>
-</tr>
-<tr>
-<td>addAll( index  : int   , c :  Collection) :   boolean</td>
-<td>在指定下标位置将集合C中的所有元素添加到该线性表</td>
-</tr>
-<tr>
-<td>get(  index :  int ) : Object</td>
-<td>返回该线性表中指定下标处的元素</td>
-</tr>
-<tr>
-<td>indexOf( element : Object ) : int</td>
-<td>返回与指定元素匹配的第一个元素下标</td>
-</tr>
-<tr>
-<td>lastIndexOf(element :  Object ) : int</td>
-<td>返回与指定元素匹配的最后一个元素的下标</td>
-</tr>
-<tr>
-<td>remove( index :  int) : int</td>
-<td>删除指定下标的元素</td>
-</tr>
-<tr>
-<td>set( index  :  int , element :  Object ) : Object</td>
-<td>设置指定下标的元素</td>
-</tr>
-<tr>
-<td>subList(fromIndex : int ,  toIndex  : int )  : List</td>
-<td>返回下标从fromIndex 到 toIndex的元素构成的子线性表</td>
-</tr>
-<tr>
-<td>listIndexOf():ListIterator</td>
-<td>返回该线性表所有元素的迭代探子</td>
-</tr>
-</tbody></table>
-<p>​     AbstractList类提供了List接口中部分方法的实现。AbstractSequentialList类扩展AbstractList类。支持链表。</p>
-<h4 id="数组线性表ArrayList和链表LinkedList"><a href="#数组线性表ArrayList和链表LinkedList" class="headerlink" title="数组线性表ArrayList和链表LinkedList"></a>数组线性表ArrayList和链表LinkedList</h4><p>​        ArrayList类和LinkedList类是实现接口的两个具体类。不同情况下选择不同的数据结构。线性表的大小是可以动态伸缩的，数组的大小在创造时就已经确定了，如不要求在线性表中插入和删除元素，数组是效率最高的数据结构。</p>
-<h4 id="向量类Vector"><a href="#向量类Vector" class="headerlink" title="向量类Vector"></a>向量类Vector</h4><p>​        Vector类除了包含用于访问和修改向量的同步方法外，它与ArrayList是相同的。同步方法用于防止两个或多个线程同时访问向量时引起的数据冲突。到现在为止，我们所学的所有新的集合数据结构都不是同步的。如果要求同步，可以使用集合类的同步版本。</p>
-<table>
-<thead>
-<tr>
-<th>java.util.Vector</th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Vector()</td>
-<td>创建一个初始容量为10的空向量</td>
-</tr>
-<tr>
-<td>Vector( initialCapacity  :  int )</td>
-<td>用指定的初始容量创建一个向量</td>
-</tr>
-<tr>
-<td>Vector( initialCapacity : int ,  CapacityIncr  :  int )</td>
-<td>指定的初始容量和容量逐步增长创建一个向量</td>
-</tr>
-<tr>
-<td>addElement（ o  :  Object）:  void</td>
-<td>将元素追加到向量尾</td>
-</tr>
-<tr>
-<td>capacity( )  :   int</td>
-<td>返回该向量的当前容量</td>
-</tr>
-<tr>
-<td>copyInto( anArray  : Object[ ] ) : void</td>
-<td>该向量中的元素复制到数组中</td>
-</tr>
-<tr>
-<td>elemrntAt( index  :  int ) : Object</td>
-<td>返回指定下标的元素值</td>
-</tr>
-<tr>
-<td>element(  ) : Enumeration</td>
-<td>返回该向量的枚举值</td>
-</tr>
-<tr>
-<td>ensureCapacity()  :  void</td>
-<td>增加向量的容量</td>
-</tr>
-<tr>
-<td>insertElementAt( o  : Object ,index : int ) : void</td>
-<td>在指定下标处插入元素o</td>
-</tr>
-<tr>
-<td>removeElement ( o : Object )  :  void</td>
-<td>删除该向量中第一个与元素o匹配的元素</td>
-</tr>
-<tr>
-<td>setElement（ o : Object , index ,int ) : void</td>
-<td>设置该向量中指定下标位置的新元素</td>
-</tr>
-<tr>
-<td>setSize( newSize : int ) : void</td>
-<td>设置该向量的大小</td>
-</tr>
-<tr>
-<td>trimToSize( ) : void</td>
-<td>把该向量的容量缩减到该向量的大小</td>
-</tr>
-</tbody></table>
-<p><strong>例子： Vector类的使用</strong></p>
-<p><strong>问题</strong>      通过检验2，3，4，5···· 、250 是否为因子来判断n是否为质数。一种为直接找因子，另一种判断n是否为素数的有效方法是，检验小于或者等于1/2^n 的素数中是否有能够整除n的，如果没有，则为素数。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        //定义一行</span><br><span class="line">        final int Number_Pre_Line = 10;</span><br><span class="line">        int count = 0;</span><br><span class="line">        //创建一个Vector向量去储存结果</span><br><span class="line">        java.util.Vector vector = new java.util.Vector();	</span><br><span class="line">        System.out.println(&quot;输出前250以前的所有质数&quot;);</span><br><span class="line">        for (int n = 2 ; n &lt; 250 ; n++) &#123;</span><br><span class="line">            boolean isPrime = true;</span><br><span class="line">            for (int i = 0; i &lt; vector.size(); i++) &#123;</span><br><span class="line">                int primeNumber = ((Integer) vector.elementAt(i)).intValue();</span><br><span class="line">                if (primeNumber &gt; Math.sqrt(n)) break;</span><br><span class="line">                if (n % primeNumber == 0) &#123;</span><br><span class="line">                    isPrime = false;</span><br><span class="line">                    break;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            if (isPrime) &#123;</span><br><span class="line">                count++;</span><br><span class="line">                vector.addElement(new Integer(n));</span><br><span class="line">                if (count % Number_Pre_Line == 0) &#123;</span><br><span class="line">                    System.out.println(n);</span><br><span class="line">                &#125; else</span><br><span class="line">                    System.out.print(n + &quot; &quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="栈类Stack"><a href="#栈类Stack" class="headerlink" title="栈类Stack"></a>栈类Stack</h4><p>​        在Java的集合构架，栈类Stack是作为Vector类的扩展实现的。Stack类扩展Vector类提供的后进先出的数据结构。</p>
-<table>
-<thead>
-<tr>
-<th>java.util.Stack</th>
-<th align="left"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>empty( ) : boolean</td>
-<td align="left">该栈为空时返回true</td>
-</tr>
-<tr>
-<td>peek( ) : Object</td>
-<td align="left">返回该栈栈顶元素</td>
-</tr>
-<tr>
-<td>pop( ) : Object</td>
-<td align="left">返回并删除该栈栈顶元素</td>
-</tr>
-<tr>
-<td>push( o  :  Object) : Object</td>
-<td align="left">在该栈的栈顶添加一个新的元素</td>
-</tr>
-<tr>
-<td>search( o  :  Object) : int</td>
-<td align="left">返回指定元素在该栈中的位置</td>
-</tr>
-</tbody></table>
-<h4 id="图Map"><a href="#图Map" class="headerlink" title="图Map"></a>图Map</h4><p>​        collection接口表示储存在一个规则集或一个线性表中元素的集合。Map接口建立元素和键值的一个映射关系。一个图中不能有重复的键值，每个键值对应一个值。Map接口提供对一个值的集合与一个键值的规则集进行查询、更新、和读取等方法。</p>
-<table>
-<thead>
-<tr>
-<th>Java.util.Map</th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>clear( )  : void</td>
-<td>从该图中删除所有的元素</td>
-</tr>
-<tr>
-<td>containsKey（key  : Object ）： boolean</td>
-<td>如果该图中包含具有指定键值的一个映像，返回true</td>
-</tr>
-<tr>
-<td>containsValue( value : Object) :  boolean</td>
-<td>如果该图将一个或多个键值映射为指定值，返回true</td>
-</tr>
-<tr>
-<td>entrySet( ) :  Set</td>
-<td>返回该图中实体构成的规则集</td>
-</tr>
-<tr>
-<td>get( Key :  Object) : Object</td>
-<td>返回该图中指定键值对应的值</td>
-</tr>
-<tr>
-<td>isEmpty( ) : boolean</td>
-<td>如果该图没有映像，返回true</td>
-</tr>
-<tr>
-<td>keySet( ) : Set</td>
-<td>返回该图中键值构成的规则集</td>
-</tr>
-<tr>
-<td>put( key : Object , Value ： Object) : Object</td>
-<td>给该图添加一个映像</td>
-</tr>
-<tr>
-<td>remove ( key : Object) : Object</td>
-<td>删除指定键值的映像</td>
-</tr>
-<tr>
-<td>size( ) : int</td>
-<td>返回图中映像的个数</td>
-</tr>
-<tr>
-<td>values() : collection</td>
-<td>返回由该图中的值构成的集合</td>
-</tr>
-</tbody></table>
-<h4 id="Collections类"><a href="#Collections类" class="headerlink" title="Collections类"></a>Collections类</h4><p>Colleections类包含了管理集合与图、创建同步集合类、创建只读集合类等静态方法。</p>
-<p><strong>Collecttions类的使用</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Collections;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        List list = Collections.nCopies(<span class="number">3</span> , <span class="string">&quot;red&quot;</span>);</span><br><span class="line"></span><br><span class="line">        ArrayList arrayList = <span class="keyword">new</span> ArrayList(list);</span><br><span class="line">        System.out.println(<span class="string">&quot;The initial list is &quot;</span>+arrayList);</span><br><span class="line">        list = <span class="keyword">null</span>;<span class="comment">//释放list</span></span><br><span class="line"></span><br><span class="line">        Collections.fill(arrayList , <span class="string">&quot;yellow&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;After filling yelow ,the list is &quot;</span>+ arrayList);</span><br><span class="line"></span><br><span class="line">        arrayList.add(<span class="string">&quot;while&quot;</span>);</span><br><span class="line">        arrayList.add(<span class="string">&quot;black&quot;</span>);</span><br><span class="line">        arrayList.add(<span class="string">&quot;orange&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;After add new element , the list is \n&quot;</span>+ arrayList);</span><br><span class="line"></span><br><span class="line">        Collections.shuffle(arrayList);</span><br><span class="line">        System.out.println(<span class="string">&quot;After shuffling , thr list \n&quot;</span> + arrayList);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;The minimum elements in the list \n&quot;</span>+Collections.min( arrayList));</span><br><span class="line">        System.out.println(<span class="string">&quot;The maximum elements in the list \n&quot;</span>+Collections.max( arrayList));</span><br><span class="line"></span><br><span class="line">        Collections.sort(arrayList);</span><br><span class="line">        System.out.println(<span class="string">&quot;The sorted list is \n&quot;</span>+ arrayList);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;The sreach result for gray is &quot;</span>+ Collections.binarySearch(arrayList, <span class="string">&quot;gray&quot;</span>));</span><br><span class="line"></span><br><span class="line">        <span class="comment">//创建一个多并发的列表</span></span><br><span class="line">        List syncList = Collections.synchronizedList(arrayList);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//创建一个只读的静态列表</span></span><br><span class="line">        List unmodifiableList = Collections.unmodifiableList(syncList);</span><br><span class="line">        arrayList= <span class="keyword">null</span> ; <span class="comment">///释放空间</span></span><br><span class="line">        syncList = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            unmodifiableList.add(<span class="string">&quot;black&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">catch</span> (Exception ex) &#123;</span><br><span class="line">                System.out.println(ex);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">运行结果：</span><br><span class="line">The initial list is [red, red, red]</span><br><span class="line">After filling yelow ,the list is [yellow, yellow, yellow]</span><br><span class="line">After add <span class="keyword">new</span> element , the list is </span><br><span class="line">[yellow, yellow, yellow, <span class="keyword">while</span>, black, orange]</span><br><span class="line">After shuffling , thr list </span><br><span class="line">[<span class="keyword">while</span>, orange, yellow, black, yellow, yellow]</span><br><span class="line">The minimum elements in the list </span><br><span class="line">black</span><br><span class="line">The maximum elements in the list </span><br><span class="line">yellow</span><br><span class="line">The sorted list is </span><br><span class="line">[black, orange, <span class="keyword">while</span>, yellow, yellow, yellow]</span><br><span class="line">The sreach result <span class="keyword">for</span> gray is -<span class="number">2</span></span><br><span class="line">java.lang.UnsupportedOperationException</span><br><span class="line">The initial list is [red, red, red]</span><br><span class="line">After filling yelow ,the list is [yellow, yellow, yellow]</span><br><span class="line">After add <span class="keyword">new</span> element , the list is </span><br><span class="line">[yellow, yellow, yellow, <span class="keyword">while</span>, black, orange]</span><br><span class="line">After shuffling , thr list </span><br><span class="line">[<span class="keyword">while</span>, orange, yellow, black, yellow, yellow]</span><br><span class="line">The minimum elements in the list </span><br><span class="line">black</span><br><span class="line">The maximum elements in the list </span><br><span class="line">yellow</span><br><span class="line">The sorted list is </span><br><span class="line">[black, orange, <span class="keyword">while</span>, yellow, yellow, yellow]</span><br><span class="line">The sreach result <span class="keyword">for</span> gray is -<span class="number">2</span></span><br><span class="line">java.lang.UnsupportedOperationException</span><br></pre></td></tr></table></figure>
-
-<h4 id="Arrays类"><a href="#Arrays类" class="headerlink" title="Arrays类"></a>Arrays类</h4><p>​        Array包含对数组进行排序、查找、比较和填充元素的各种静态方法。它还包含了将数组转化为线性表的方法。</p>
-<h4 id="主要术语"><a href="#主要术语" class="headerlink" title="主要术语"></a>主要术语</h4><p>collection （集合）                             map（图）</p>
-<p>list（线性表）                                     set（规则集）</p>
-<h4 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h4><ul>
-<li>java集合构架支持三种集合：规则集、线性表和图。它们分别在Set、List和Map中定义。规则集set储存一组互不相同的元素。线性表list储存元素的有序集合。图map中储存一组对象，每个对象的键值不同</li>
-<li>有三种类型的规则集：散列集HashSet、链式散列集LinkedHashSet和树形集TreeSet。</li>
-<li>有两种类型的线性表：数组线性表ArrayList和链表LinkedList。</li>
-<li>Vector类实现了List接口。在java 2中，Vector类与ArrayList基本一致，所不同的是它包含了访问和修改向量的同步方法。Stack类扩展了Vector类，并提供了集中管理栈的方法。</li>
-<li>Collection接口表示储存在规则集或线性表中元素的集合。Map接口将键值映射为元素，键值类似于下标。在List中，下标为整数；在map中下标可以为任意一个值。</li>
-<li>有三种类型的图： HashMap、LinkedHashMap和TreeMap。对于查询值、插入映射和删除映射HashMap是最高效的。LinkedHashMap支持对图中元素的排序。在HashMap中是没有顺序的，但在LinkedHashMap中的元素可以按序访问。TreeSet对于按顺序遍历键值是高效率的，其中键值可以使用Comparable接口或Comparator接口排序。</li>
-<li>Collections类提供对集合和图进行操作的静态方法，还提供了创建同步化集合。只读集合的静态方法。</li>
-<li>Arrays类包含对数组的排序、查找、比较以及填充元素的静态方法。</li>
-</ul>
-<h2 id="第三章-多线程和国际化"><a href="#第三章-多线程和国际化" class="headerlink" title="第三章 多线程和国际化"></a>第三章 多线程和国际化</h2><h3 id="引言-2"><a href="#引言-2" class="headerlink" title="引言"></a>引言</h3><p>​        Java的重要功能之一就是天然的支持多线程。多线程是指在一个程序中允许同时运行多个任务的能力。在许多程序设计语言中，多线程都是通过调用依赖于系统的过程中或函数来实现的。本章将介绍线程的概念以及如何在Java中开发多线线程程序。</p>
-<h3 id="线程的概念"><a href="#线程的概念" class="headerlink" title="线程的概念"></a>线程的概念</h3><p>​        一个线程（tread）指的是程序中完成一个任务的有始有终的执行流。使用java可以在一个程序中并发的运行多个线程，这些线程可以同时在多个处理器系统上运行。</p>
-<p>​        在单处理器系统中，多个线程分享CPU的时间，操作系统负责给它们调度和分配资。</p>
-<p>​        多线程可以使程序反应更快，交互性更强，执行效率更高。Java对多线程程序的开发和运行提供了很好的支持。</p>
-<p>​        在程序中还可以创建附加的线程以执行并发任务。每个新线程都是一个对象，它的类实现Runnable接口或者拓展实现Runnable接口。这种新对象称为可运行对象（runnable object）。 </p>
-<p>​        既可以通过扩展Thread类，也可以通过Runnable接口来创建线程。Thread和Runnable都定义在包java.lang中。类Tread事实上实现了Runnable接口。</p>
-<h3 id="拓展Thread类创建线程"><a href="#拓展Thread类创建线程" class="headerlink" title="拓展Thread类创建线程"></a>拓展Thread类创建线程</h3><pre><code>     Thread类包含创建线程的构造方法，以及控制线程的很多有用的方法。要创建并运行一个线程。首先定义Thread类的一个扩展类。自定义的线程类必须覆盖run( )方法，该方法告知系统如何执行线程。然后创建一个在线程上运行的对象。
-</code></pre>
-<p>问题： 编写一个程序，创建并运行三个线程：</p>
-<ul>
-<li>第一个线程打印字母a 100次</li>
-<li>第二个线程打印字母b 1000次</li>
-<li>第三个线程打印1~100的整数</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">import java.lang.Thread;</span><br><span class="line"></span><br><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        //创建线程</span><br><span class="line">        PrintChar printA = new PrintChar(&#x27;a&#x27; ,100);</span><br><span class="line">        PrintChar printB = new PrintChar(&#x27;b&#x27; ,100);</span><br><span class="line">        PrintNum print100 = new PrintNum(100);</span><br><span class="line"></span><br><span class="line">        print100.start();</span><br><span class="line">        printA.start();</span><br><span class="line">        printB.start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class PrintChar extends Thread&#123;</span><br><span class="line">    private char charToPrint;</span><br><span class="line">    private int times;</span><br><span class="line"></span><br><span class="line">    public PrintChar(char charToPrint , int times)&#123;</span><br><span class="line">        this.charToPrint = charToPrint;</span><br><span class="line">        this.times = times;</span><br><span class="line">    &#125;</span><br><span class="line">    public void run()&#123;</span><br><span class="line">        for (int i  = 0 ; i &lt; times ; i++)&#123;</span><br><span class="line">            System.out.print(charToPrint);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">class PrintNum extends Thread&#123;</span><br><span class="line">    private int lastNum;</span><br><span class="line"></span><br><span class="line">    public PrintNum(int lastNum)&#123;</span><br><span class="line">        this.lastNum =  lastNum;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void run()&#123;</span><br><span class="line">        for (int i = 1 ; i &lt;= lastNum ; i++ )&#123;</span><br><span class="line">            System.out.print(&quot; &quot;+ i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//运行结果：ab交替打印，数字大多数在最后打印</span><br></pre></td></tr></table></figure>
-
-<p>例子说明：调用start( )方法启动一个线程，它调用了run( )方法。当run( ) 执行完毕，整个线程也就结束了。</p>
-<h3 id="实现runnable接口创建线程"><a href="#实现runnable接口创建线程" class="headerlink" title="实现runnable接口创建线程"></a>实现runnable接口创建线程</h3><p>​        学习过Thread类扩展的用户类线程，创建和运行了一个线程。如果用户仅继承Thread类，这种做法很好；但是如果它要继承别的类，必须实现Runnable接口。</p>
-<p>​    若利用Runnable接口启动一个新线程，必须先创建一个实现Runnable接口的类的实例，然后使用Thread类的构造方法构造一个线程。</p>
-<p>问题： 编写一个程序，创建并运行三个线程：</p>
-<ul>
-<li>第一个线程打印字母a 100次</li>
-<li>第二个线程打印字母b 1000次</li>
-<li>第三个线程打印1~100的整数</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">import java.lang.Thread;</span><br><span class="line"></span><br><span class="line">public class Main &#123;</span><br><span class="line">    Thread printA = new Thread(new PrintChar(&#x27;a&#x27;, 100));</span><br><span class="line">    Thread printB = new Thread(new PrintChar(&#x27;b&#x27;, 100));</span><br><span class="line">    Thread print100 = new Thread(new PrintNum(100));</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        new Main();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Main() &#123;</span><br><span class="line">        print100.start();</span><br><span class="line">        printA.start();</span><br><span class="line">        printB.start();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    class PrintChar implements Runnable &#123;</span><br><span class="line">        private char charToPrint;</span><br><span class="line">        private int times;</span><br><span class="line"></span><br><span class="line">        public PrintChar(char charToPrint, int times) &#123;</span><br><span class="line">            this.charToPrint = charToPrint;</span><br><span class="line">            this.times = times;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        public void run() &#123;</span><br><span class="line">            for (int i = 0; i &lt; times; i++) &#123;</span><br><span class="line">                System.out.print(charToPrint);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">    class PrintNum implements Runnable &#123;</span><br><span class="line">        private int lastNum;</span><br><span class="line"></span><br><span class="line">        public PrintNum(int lastNum) &#123;</span><br><span class="line">            this.lastNum = lastNum;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        public void run() &#123;</span><br><span class="line">            for (int i = 1; i &lt;= lastNum; i++) &#123;</span><br><span class="line">                System.out.print(&quot; &quot; + i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="线程的控制与通信"><a href="#线程的控制与通信" class="headerlink" title="线程的控制与通信"></a>线程的控制与通信</h3><p>​        Thread类中提供了控制线程的方法，如下所示：</p>
-<table>
-<thead>
-<tr>
-<th>java.lang.Thread</th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Thread( )</td>
-<td>创建一个默认的线程</td>
-</tr>
-<tr>
-<td>Thread（ tagert：Runnable）</td>
-<td>创建一个运行目标对象的新线程</td>
-</tr>
-<tr>
-<td>run( ) : void</td>
-<td>java虚拟机中调用该方法执行线程。在用户线程类中，必须覆盖该方法并且提供想让线程执行的代码。尽管该方法是可运行对象的一个实例方法，但是该程序中永远也不能被可运行对象直接调用</td>
-</tr>
-<tr>
-<td>start( ) : void</td>
-<td>该方法启动线程，它引起Java虚拟机对run( )放大的调用</td>
-</tr>
-<tr>
-<td>interrupt( ) ：void</td>
-<td>中断该线程。如果该线程处于阻塞状态，它就进入重新运行的就绪状态</td>
-</tr>
-<tr>
-<td>isAlive() : boolean</td>
-<td>该方法判断线程是否处于正在运行</td>
-</tr>
-<tr>
-<td>setPriority( p : int ) : void</td>
-<td>该方法设置线程的优先级为p（p的范围从1~10）</td>
-</tr>
-<tr>
-<td>join( ) : void</td>
-<td>等待该线程结束</td>
-</tr>
-<tr>
-<td>sleep(millis : long) : void</td>
-<td>该方法可将运行对象设置为休眠状态，休眠时间为指定的毫秒级</td>
-</tr>
-<tr>
-<td>yield（）：void</td>
-<td>让该线程暂停执行，允许其他线程开始运行</td>
-</tr>
-<tr>
-<td>isInterrupted( ):Boolean</td>
-<td>该方法判断当前线程是否被中断</td>
-</tr>
-<tr>
-<td>currentThread（）:Thread</td>
-<td>返回当前正在运行的线程对象的引用</td>
-</tr>
-</tbody></table>
-<h3 id="线程的状态"><a href="#线程的状态" class="headerlink" title="线程的状态"></a>线程的状态</h3><p>​        线程有五种状态：新建、就绪、运行、阻塞或结束。</p>
-<h3 id="线程的优先级"><a href="#线程的优先级" class="headerlink" title="线程的优先级"></a>线程的优先级</h3><p>​        java给每个线程指定一个优先级。可以用用setPriority方法提高或降低任何线程的优先级，还能用getPriority的方法得到线程的优先级。优先级的数字为1~10。</p>
-<h3 id="线程组"><a href="#线程组" class="headerlink" title="线程组"></a>线程组</h3><p>​        一个线程组是线程的一个集合。有些程序包含相当多的具有类似功能的线程。为了方便，可以将他们放在一起作为一个整体进行操作。例如：可以同时挂起或唤醒同一组里的所有线程。</p>
-<p>​        以下列出使用线程组的主要步骤：</p>
-<pre><code>    1. 使用构造方法ThreadGroup来构造线程组：
-</code></pre>
-<p><code>ThreadGroup g = new ThreadGroup(&quot;thread group&quot;);</code></p>
-<p>​    上述语句创建了一个名为“Thread group”的线程组g。组名必须是唯一的字符串。</p>
-<pre><code> 2. 使用Thread构造方法，将一个线程放入到线程组中：
-</code></pre>
-<p><code>Thread t = new Thread( g , new ThreadClass( ) , &quot;label for the thread&quot;);</code></p>
-<p>​    该语句创建了一个线程,并将它放入了线程组g中，可以把一个线程组添加到另一个线程组，构成一个树形结构，除了起始组以外，树中每一个线程组都一个父线程组。</p>
-<pre><code> 3. 使用activeCount( )确定有多少个线程组处于运行状态
-</code></pre>
-<p><code>System.out.println(&quot;The number is &quot; + g.activeCount());</code></p>
-<pre><code>4. 每一个线程都属于一个线程组。默认情况下，一个新建的线程属于产生它的当前线程所在的组。可以用getThreadGroup( )方法判断线程属于哪一线程组。
-</code></pre>
-<h3 id="线程之间的同步与协作"><a href="#线程之间的同步与协作" class="headerlink" title="线程之间的同步与协作"></a>线程之间的同步与协作</h3><p>​        如果一个共享资源被多个线程同时访问，可能会遭到破坏。</p>
-<p>问题：编写一个程序冲突问题的程序。假设创建并启动了100个线程，每个线程都往同一个账户中添加一个便士编写一个程序冲突问题的程序。假设创建并启动了100个线程，每个线程都往同一个账户中添加一个便士。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Account  account = <span class="keyword">new</span> Account();</span><br><span class="line">    <span class="keyword">private</span> Thread[] thread = <span class="keyword">new</span> Thread[<span class="number">100</span>];</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Main main = <span class="keyword">new</span> Main();</span><br><span class="line">        System.out.println(<span class="string">&quot;What is balance ？ &quot;</span>+ main.account.getBalance() );</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Main() &#123;</span><br><span class="line">        ThreadGroup g = <span class="keyword">new</span> ThreadGroup(<span class="string">&quot;group&quot;</span>);</span><br><span class="line">        <span class="keyword">boolean</span> done = <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; <span class="number">100</span> ; i++)&#123;</span><br><span class="line">            thread[i] = <span class="keyword">new</span> Thread(g,<span class="keyword">new</span> AddAPennyThread() ,<span class="string">&quot;t&quot;</span>);</span><br><span class="line">            thread[i].start();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(!done)&#123;</span><br><span class="line">            <span class="keyword">if</span> (g.activeCount()==<span class="number">0</span>)&#123;</span><br><span class="line">                done = <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">AddAPennyThread</span> <span class="keyword">extends</span> <span class="title">Thread</span></span>&#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</span><br><span class="line">            account.deposit(<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Account</span> </span>&#123;</span><br><span class="line">        <span class="keyword">private</span> <span class="keyword">int</span> balance = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getBalance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> balance;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">deposit</span><span class="params">(<span class="keyword">int</span> amount)</span></span>&#123;</span><br><span class="line">            <span class="keyword">int</span> newBalance = balance + amount ;</span><br><span class="line">            <span class="keyword">try</span>&#123;</span><br><span class="line">                Thread.sleep(<span class="number">5</span>);</span><br><span class="line">            &#125;<span class="keyword">catch</span> (InterruptedException ex )&#123;</span><br><span class="line">            &#125;</span><br><span class="line">            balance = newBalance;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//运行结果：预期为100，但经过实测发现就是1/2/3等</span></span><br></pre></td></tr></table></figure>
-
-<p>例子说明：当所有线程同时访问一数据源时，就会出现诗句冲突的问题、通过调整线程的休眠时间可以显著的增加数据不稳定的可能性。这是多线程程序中普遍存在的问题，被称为资源冲突。如果一个类的对象在程序中没有引起资源冲突，则称这样的类为线程安全的。</p>
-
-      
+    <div id="indexCard" class="index-card">
+        <div class="container ">
+            <div class="card">
+                <div class="card-content">
+                    
+                        <div class="dream">
+    
+    <div class="title center-align">
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的梦想
     </div>
-    <footer class="article-footer">
-      <a data-url="https://codejfeng.github.com/2021/07/14/java%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" data-id="ckv5xrjaj0004pww78osoaepj" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
+            不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+        </div>
+    </div>
+</div>
 
-    </footer>
-  </div>
-  
-</article>
+                    
+
+                    
+
+                    
+
+                    
+                    <div id="recommend-sections" class="recommend">
+                        
 
 
-  
 
-
-</section>
-        
-          <aside id="sidebar">
-  
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
     
 
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML-CSS/" rel="tag">HTML+CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li></ul>
-    </div>
-  </div>
+
+    <!-- 所有文章卡片 -->
+    <article id="articles" class="container articles">
+        <div class="row article-row">
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/09/02/Web%E5%89%8D%E7%AB%AF/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="web前端">
+                            
+                            <span class="card-title">web前端</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                HTML &amp; CSS 概述HTML第一个网页123456789101112&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;    &lt;meta c
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-02
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                CodeJfeng
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/HTML-CSS/">
+                            <span class="chip bg-color">HTML+CSS</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/08/31/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="分布式计算">
+                            
+                            <span class="card-title">分布式计算</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                第一章 分布式计算1.1 分布式计算简介​        分布式计算是应用分解成许多小的部分，分配给多台计算机进行处理。目的节约整体计算时间，大大提高计算效率。
+分布式储存是解决大规模数据高效储存的问题
+分布式计算是解决大规模数据高效处理的
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-31
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                CodeJfeng
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/linux/">
+                            <span class="chip bg-color">linux</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/07/14/java%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="java语言程序设计">
+                            
+                            <span class="card-title">java语言程序设计</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                Java第一章 面对对象的数据结构引言​    数据结构是按照某种方式组织的数据集合。
+​    数据结构不仅储存数据，而且支持处理该结构中数据的操作
+​    本章将介绍线性表、堆栈、队列和二叉树等四种经典的数据结构
+​    对象是靠n
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-14
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                CodeJfeng
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/java/">
+                            <span class="chip bg-color">java</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+              <!-- 隐藏某个文章 -->
+            
+        </div>
+    </article>
+
+</main>
 
 
-  
+
+
+    <footer class="page-footer bg-color">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/HTML-CSS/" style="font-size: 10px;">HTML+CSS</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a>
-    </div>
-  </div>
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
 
-  
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">九月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">八月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">七月 2021</a></li></ul>
-    </div>
-  </div>
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
 
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
 
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/09/02/Web%E5%89%8D%E7%AB%AF/">web前端</a>
-          </li>
-        
-          <li>
-            <a href="/2021/08/31/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/">分布式计算</a>
-          </li>
-        
-          <li>
-            <a href="/2021/07/14/java%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">java语言程序设计</a>
-          </li>
-        
-      </ul>
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
     </div>
-  </div>
+</div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2021 CodeJfeng<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2021</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">CodeJfeng</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1683770168@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1683770168" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1683770168" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
     </div>
-  </div>
 </footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    
 
+    
 
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+    <!--腾讯兔小巢-->
+    
+    
 
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+    
 
+    
 
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
 
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
 </body>
+
 </html>
